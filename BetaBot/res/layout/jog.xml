@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    >
+
+<HorizontalScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     >
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip" >
+
+    <Button
+        android:id="@+id/xzero"
+        android:padding="0dip"
+        android:layout_width="65dip"
+        android:layout_height="65dip"
+        android:layout_marginLeft="5dip"
+        android:layout_alignTop="@+id/xneg"
+        android:layout_toRightOf="@+id/xneg"
+        android:background="@drawable/green_button"
+        android:text="@string/zero_label"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/xpos"
+        android:padding="0dip"
+        android:layout_width="65dip"
+        android:layout_height="65dip"
+        android:layout_marginLeft="75dip"
+        android:layout_alignTop="@+id/xneg"
+        android:layout_toRightOf="@+id/xneg"
+        android:background="@drawable/green_button"
+        android:text="@string/xpos"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+    
+    <LinearLayout
+        android:id="@+id/third_line"
+        android:layout_toRightOf="@+id/xpos"
+    	android:layout_height="500dip"
+    	android:layout_width="2dip"
+    	android:layout_marginLeft="30dip"
+    	android:background="#000000"
+    	android:orientation="vertical"
+    	android:layout_alignTop="@+id/first_line"
+    	android:layout_alignBottom="@+id/fourth_line"
+    	 >
+	</LinearLayout>
+
+    <Button
+        android:id="@+id/yzero"
+        android:padding="0dip"
+        android:layout_width="65dip"
+        android:layout_height="65dip"
+        android:layout_marginLeft="5dip"
+        android:layout_alignTop="@+id/yneg"
+        android:layout_toRightOf="@+id/yneg"
+        android:background="@drawable/green_button"
+        android:text="@string/zero_label"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/ypos"
+        android:padding="0dip"
+        android:layout_width="65dip"
+        android:layout_height="65dip"
+        android:layout_marginLeft="75dip"
+        android:layout_alignTop="@+id/yneg"
+        android:layout_toRightOf="@+id/yneg"
+        android:background="@drawable/green_button"
+        android:text="@string/ypos"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/zneg"
+        android:padding="0dip"
+        android:layout_width="65dip"
+        android:layout_height="65dip"
+        android:layout_marginTop="5dip"
+        android:layout_alignLeft="@+id/yneg"
+        android:layout_below="@+id/yneg"
+        android:background="@drawable/green_button"
+        android:text="@string/zneg"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/zzero"
+        android:padding="0dip"
+        android:layout_width="65dip"
+        android:layout_height="65dip"
+        android:layout_marginLeft="5dip"
+        android:layout_alignTop="@+id/zneg"
+        android:layout_toRightOf="@+id/zneg"
+        android:background="@drawable/green_button"
+        android:text="@string/zero_label"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/zpos"
+        android:padding="0dip"
+        android:layout_width="65dip"
+        android:layout_height="65dip"
+        android:layout_marginLeft="75dip"
+        android:layout_alignTop="@+id/zneg"
+        android:layout_toRightOf="@+id/zneg"
+        android:background="@drawable/green_button"
+        android:text="@string/zpos"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/aneg"
+        android:padding="0dip"
+        android:layout_width="65dip"
+        android:layout_height="65dip"
+        android:layout_marginTop="5dip"
+        android:layout_alignLeft="@+id/yneg"
+        android:layout_below="@+id/zneg"
+        android:background="@drawable/green_button"
+        android:text="@string/aneg"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+    
+    <LinearLayout
+        android:id="@+id/fourth_line"
+        android:layout_below="@+id/aneg"
+    	android:layout_width="fill_parent"
+    	android:layout_height="2dip"
+    	android:layout_marginTop="10dip"
+    	android:background="#000000"
+    	android:orientation="horizontal"
+    	android:layout_alignRight="@+id/whatever_line"
+    	 >
+	</LinearLayout>
+	
+    <Button
+        android:id="@+id/sensor"
+        android:padding="0dip"
+        android:layout_width="55dip"
+        android:layout_height="55dip"
+        android:layout_marginTop="10dip"
+        android:layout_alignLeft="@+id/yneg"
+        android:layout_below="@+id/second_line"
+        android:background="@drawable/blue_button"
+        android:text="Sensor"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+    
+    <LinearLayout
+        android:id="@+id/fifth_line"
+        android:layout_below="@+id/toggle_status"
+    	android:layout_width="fill_parent"
+    	android:layout_height="2dip"
+    	android:layout_marginTop="50dip"
+    	android:background="#000000"
+    	android:orientation="horizontal"
+    	android:layout_alignRight="@+id/whatever_line"
+    	 >
+	</LinearLayout>
+    
+    <TextView
+        android:id="@+id/reading"
+        android:layout_width="150dip"
+        android:layout_height="30dip"
+        android:layout_alignBottom="@+id/sensor"
+        android:layout_alignTop="@+id/sensor"
+        android:layout_marginLeft="15dip"
+        android:layout_toRightOf="@+id/sensor"
+        android:background="@color/white"
+        android:gravity="bottom"
+        android:text=" ------ "
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/coeffLabel"
+        android:layout_width="70dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_alignLeft="@+id/reading"
+        android:layout_below="@+id/reading"
+        android:gravity="bottom"
+        android:text="coef."
+        android:padding="0dip"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:background="@color/light_green" />
+    
+    <TextView
+        android:id="@+id/constLabel"
+        android:layout_width="70dip"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/coeffLabel"
+        android:layout_toRightOf="@+id/coeffLabel"
+        android:layout_marginLeft="10dip"
+        android:layout_below="@+id/reading"
+        android:background="@color/light_green"
+        android:gravity="bottom"
+        android:text="const."
+        android:padding="0dip"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    
+    <ToggleButton
+        android:id="@+id/adjFactorToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/coeffLabel"
+        android:layout_alignTop="@+id/adjCoef"
+        android:layout_alignBottom="@+id/adjCoef"
+        android:layout_marginRight="10dip"
+        android:textSize="25sp"
+        android:textOff="Adj."
+        android:textOn="Adj."
+        android:textColor="@color/toggle_color"
+        android:background="@drawable/purple_button"
+        android:textStyle="bold"
+        android:gravity="center_vertical" />
+    
+    <EditText
+        android:id="@+id/adjCoef"
+        android:layout_width="70dip"
+        android:layout_height="50dip"
+        android:layout_below="@+id/coeffLabel"
+        android:layout_alignLeft="@+id/coeffLabel"
+        android:layout_alignRight="@+id/coeffLabel"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:numeric="signed"
+        android:hint="coef."
+         />
+    
+    <EditText
+        android:id="@+id/adjConst"
+        android:layout_width="70dip"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/adjCoef"
+        android:layout_alignTop="@+id/adjCoef"
+        android:layout_alignBottom="@+id/adjCoef"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginLeft="10dip"
+        android:background="@color/white"
+        android:numeric="signed"
+        android:hint="const." />
+    
+    <TextView
+        android:id="@+id/adjReading"
+        android:layout_width="300dip"
+        android:layout_height="55dip"
+        android:layout_alignRight="@+id/adjConst"
+        android:layout_alignLeft="@+id/adjCoef"
+        android:layout_below="@+id/adjFactorToggle"
+        android:background="@color/white"
+        android:gravity="bottom"
+        android:text=" ------ "
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dip" />
+    
+     <LinearLayout
+        android:id="@+id/sixth_line"
+    	android:layout_height="6000dip"
+    	android:layout_width="2dip"
+    	android:layout_alignTop="@+id/second_line"
+    	android:layout_alignBottom="@+id/fifth_line"
+    	android:layout_alignRight="@+id/third_line" 
+    	android:layout_alignLeft="@+id/third_line"
+    	android:background="#000000"
+    	android:orientation="horizontal" >
+	</LinearLayout>
+	
+    <ToggleButton
+        android:id="@+id/toggle_power"
+        android:padding="0dip"
+        android:layout_width="55dip"
+        android:layout_height="55dip"
+        android:layout_alignBottom="@+id/reset"
+        android:layout_toRightOf="@+id/seventh_line"
+        android:background="@drawable/purple_button"
+        android:textColor="#ffffff"
+        android:textOff="Disable Motors"
+        android:textOn="Energize Motors"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dip"
+        />
+
+    <Button
+        android:id="@+id/azero"
+        android:padding="0dip"
+        android:layout_width="65dip"
+        android:layout_height="65dip"
+        android:layout_marginLeft="5dip"
+        android:layout_alignTop="@+id/aneg"
+        android:layout_toRightOf="@+id/aneg"
+        android:background="@drawable/green_button"
+        android:text="@string/zero_label"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/apos"
+        android:layout_width="65dip"
+        android:layout_height="65dip"
+        android:layout_marginLeft="75dip"
+        android:layout_alignTop="@+id/aneg"
+        android:layout_toRightOf="@+id/aneg"
+        android:background="@drawable/green_button"
+        android:text="@string/apos"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/speedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_thin_line"
+        android:layout_alignLeft="@+id/usenewspeed"
+        android:layout_marginTop="10dip"
+        android:textSize="25sp"
+        android:text="OVERRIDE"
+        android:textStyle="bold" />
+    
+    <LinearLayout
+        android:id="@+id/second_line"
+        android:layout_below="@+id/speedGroup"
+    	android:layout_width="fill_parent"
+    	android:layout_height="2dip"
+    	android:layout_marginTop="10dip"
+    	android:background="#000000"
+    	android:orientation="horizontal"
+    	android:layout_alignRight="@+id/whatever_line"
+    	 >
+	</LinearLayout>
+    
+    <RadioGroup
+        android:id="@+id/speedGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/speedLabel"
+        android:layout_marginLeft="0dip"
+        android:layout_marginTop="10dip"
+        android:layout_below="@+id/usenewspeed"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/speed_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="full" />
+
+        <RadioButton
+            android:id="@+id/speed_300"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="3/4" />
+
+        <RadioButton
+            android:id="@+id/speed_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="half" />
+
+        <RadioButton
+            android:id="@+id/speed_100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="1/4" />
+
+        
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/gcode"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/gcode_label"
+        android:layout_alignTop="@+id/go"
+        android:layout_alignBottom="@+id/go"
+        android:layout_toLeftOf="@+id/go"
+        android:inputType="text"
+        android:singleLine="true"
+        android:layout_marginLeft="10dip"
+        android:background="@color/white" />
+
+    <Button
+        android:id="@+id/go"
+        android:padding="0dip"
+        android:layout_width="110dip"
+        android:layout_height="55dip"
+        android:layout_alignRight="@+id/ahome"
+        android:layout_below="@+id/fifth_line"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="5dip"
+        android:background="@drawable/green_button"
+        android:text="@string/go_label"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/yneg"
+        android:padding="0dip"
+        android:layout_width="65dip"
+        android:layout_height="65dip"
+        android:layout_marginTop="5dip"
+        android:layout_below="@+id/xneg"
+        android:layout_alignLeft="@+id/xneg"
+        android:background="@drawable/green_button"
+        android:text="@string/yneg"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/second_thin_line"
+        android:layout_toRightOf="@+id/speedLabelA"
+    	android:layout_height="50dip"
+    	android:layout_width="2dip"
+    	android:layout_marginLeft="20dip"
+    	android:layout_alignTop="@+id/first_thin_line"
+    	android:layout_alignBottom="@+id/second_line"
+    	android:background="#000000"
+    	android:orientation="horizontal" >
+	</LinearLayout>
+    
+    <ToggleButton
+        android:id="@+id/usenewspeed"
+        android:padding="0dip"
+        android:layout_width="55dip"
+        android:layout_height="55dip"
+        android:layout_marginLeft="30dip"
+        android:layout_alignTop="@+id/jogRate"
+        android:layout_toRightOf="@+id/second_thin_line"
+        android:background="@drawable/blue_button"
+        android:textOff="Speed O/R"
+        android:textOn="Speed O/R"
+        android:textColor="@color/toggle_color"
+        android:textStyle="bold" />
+    
+    
+    <ToggleButton
+        android:id="@+id/factorD10"
+        android:padding="0dip"
+        android:layout_width="55dip"
+        android:layout_height="55dip"
+        android:layout_marginLeft="20dip"
+        android:layout_alignTop="@+id/jogRate"
+        android:layout_toRightOf="@+id/usenewspeed"
+        android:background="@drawable/blue_button"
+        android:textOff="/ 10"
+        android:textOn="/ 10"
+        android:textColor="@color/toggle_color"
+        android:textStyle="bold" />
+    
+    <ToggleButton
+        android:id="@+id/factorD100"
+        android:padding="0dip"
+        android:layout_width="55dip"
+        android:layout_height="55dip"
+        android:layout_marginLeft="5dip"
+        android:layout_alignTop="@+id/jogRate"
+        android:layout_toRightOf="@+id/factorD10"
+        android:background="@drawable/blue_button"
+        android:textOff="/ 100"
+        android:textOn="/ 100"
+        android:textColor="@color/toggle_color"
+        android:textStyle="bold" />
+    
+    <!-- <TextView
+        android:id="@+id/factor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="6dip"
+        android:layout_alignBottom="@+id/jogRate"
+        android:layout_toRightOf="@+id/factorD10"
+        android:textSize="25sp"
+        android:text="factor"
+        android:textStyle="bold" /> -->
+
+    <TextView
+        android:id="@+id/rateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fourth_line"
+        android:layout_alignLeft="@+id/reset"
+        android:layout_marginTop="25dip"
+        android:textSize="25sp"
+        android:text=" STEP SIZE"
+        android:textStyle="bold" /><!-- android:text="@string/jogval" -->
+
+    <Button
+        android:id="@+id/xneg"
+        android:padding="0dip"
+        android:layout_width="65dip"
+        android:layout_height="65dip"
+		android:layout_below="@+id/first_line"
+        android:layout_alignLeft="@+id/reset"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/green_button"
+        android:text="@string/xneg"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/reset"
+        android:padding="0dip"
+        android:layout_width="55dip"
+        android:layout_height="55dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="6dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/red_button"
+        android:text="@string/reset_label"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+    
+    <LinearLayout
+        android:id="@+id/first_line"
+        android:layout_below="@+id/reset"
+    	android:layout_width="fill_parent"
+    	android:layout_height="2dip"
+    	android:layout_marginTop="10dip"
+    	android:background="#000000"
+    	android:orientation="horizontal"
+    	android:layout_alignRight="@+id/whatever_line"
+    	 >
+	</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/seventh_line"
+        android:layout_toRightOf="@+id/reset"
+    	android:layout_height="800dip"
+    	android:layout_width="2dip"
+    	android:layout_marginLeft="20dip"
+    	android:layout_alignTop="@+id/reset"
+    	android:layout_alignBottom="@+id/first_line"
+    	android:background="#000000"
+    	android:orientation="horizontal" >
+	</LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/eighth_line"
+        android:layout_toRightOf="@+id/toggle_power"
+    	android:layout_height="800dip"
+    	android:layout_width="2dip"
+    	android:layout_marginLeft="20dip"
+    	android:layout_alignTop="@+id/reset"
+    	android:layout_alignBottom="@+id/first_line"
+    	android:background="#000000"
+    	android:orientation="horizontal" >
+	</LinearLayout>
+    
+    
+    <Button
+        android:id="@+id/home_sequence"
+        android:padding="0dip"
+        android:layout_width="65dip"
+        android:layout_height="55dip"
+        android:layout_marginLeft="20dip"
+        android:layout_alignBottom="@+id/toggle_power"
+        android:layout_toRightOf="@+id/eighth_line"
+        android:background="@drawable/yellow_button"
+        android:text="Home Seq."
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/yhome"
+        android:padding="2dip"
+        android:layout_width="65dip"
+        android:layout_height="55dip"
+        android:layout_marginLeft="85dip"
+        android:layout_alignBottom="@+id/reset"
+        android:layout_toRightOf="@+id/home_sequence"
+        android:background="@drawable/yellow_button"
+        android:text="Home Y"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/zhome"
+        android:padding="2dip"
+        android:layout_width="65dip"
+        android:layout_height="55dip"
+        android:layout_marginLeft="155dip"
+        android:layout_toRightOf="@+id/home_sequence"
+        android:layout_alignBottom="@+id/reset"
+        android:background="@drawable/yellow_button"
+        android:text="Home Z"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/ahome"
+        android:padding="2dip"
+        android:layout_width="65dip"
+        android:layout_height="55dip"
+        android:layout_marginLeft="225dip"
+        android:layout_toRightOf="@+id/home_sequence"
+        android:layout_alignBottom="@+id/reset"
+        android:background="@drawable/yellow_button"
+        android:text="Home A"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/xhome"
+        android:padding="2dip"
+        android:layout_width="65dip"
+        android:layout_height="55dip"
+        android:layout_marginLeft="15dip"
+        android:layout_alignBottom="@+id/reset"
+        android:layout_toRightOf="@+id/home_sequence"
+        android:background="@drawable/yellow_button"
+        android:text="Home X"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <ToggleButton
+        android:id="@+id/jogRate"
+        android:padding="0dip"
+        android:layout_width="55dip"
+        android:layout_height="55dip"
+        android:layout_alignLeft="@+id/reset"
+        android:layout_below="@+id/speedLabelA"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="20dip"
+        android:background="@drawable/blue_button"
+        android:textOff="@string/feed_slow_label"
+        android:textOn="@string/feed_fast_label"
+        android:textColor="@color/toggle_color"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/gcode_label"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="35dip"
+        android:layout_alignLeft="@+id/sensor"
+        android:layout_below="@+id/fifth_line"
+        android:layout_marginTop="20dip"
+        android:text="@string/gcode_label"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dip"
+        />"
+
+    <RadioGroup
+        android:id="@+id/rateGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rateLabel"
+        android:layout_marginLeft="10dip"
+        android:layout_below="@+id/rateLabel"
+        android:orientation="horizontal"
+        android:textStyle="bold" >
+
+        <RadioButton
+            android:id="@+id/step_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="400" />
+        <RadioButton
+            android:id="@+id/step_100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="@string/step_100" />
+
+        <RadioButton
+            android:id="@+id/step_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="@string/step_10" />
+
+        
+
+        <RadioButton
+            android:id="@+id/step_1_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="@string/step_1_0" />
+
+        
+        
+        <RadioButton
+            android:id="@+id/step_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="@string/step_1" />
+        <RadioButton
+            android:id="@+id/step_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="@string/step_01" />
+        
+        <RadioButton
+            android:id="@+id/step_001"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="@string/step_001" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/first_thin_line"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/rateGroup"
+        android:layout_marginTop="10dip"
+        android:layout_toLeftOf="@+id/whatever_line"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:layout_alignRight="@+id/whatever_line" >
+
+	</LinearLayout>
+    
+    <TextView
+        android:id="@+id/speedLabelA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_thin_line"
+        android:layout_alignLeft="@+id/rateLabel"
+        android:layout_marginTop="10dip"
+        android:textSize="25sp"
+        android:text=" SPEED"
+        android:textStyle="bold" />
+    
+    <Button
+        android:id="@+id/tempXYZ"
+        android:layout_width="180dip"
+        android:layout_height="55dip"
+        android:layout_alignLeft="@+id/tempXY"
+        android:layout_alignRight="@+id/tempXY"
+        android:layout_below="@+id/tempXY"
+        android:layout_marginTop="2dip"
+        android:background="@drawable/blue_button"
+        android:padding="0dip"
+        android:text="Add Ingredient (XYZ)"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+<!-- 
+    <ToggleButton
+        android:id="@+id/coolant"
+        android:padding="0dip"
+        android:layout_width="55dip"
+        android:layout_height="55dip"
+        android:layout_marginLeft="2dip"
+        android:layout_alignBaseline="@+id/spindle"
+        android:layout_alignBottom="@+id/spindle"
+        android:layout_toRightOf="@+id/spindle"
+        android:background="@drawable/black_button"
+        android:textColor="#ffffff"
+        android:textOff="@string/coolant_label"
+        android:textOn="@string/coolant_label"
+        android:textStyle="bold" />
+-->
+    <Button
+        android:id="@+id/tempXY"
+        android:layout_width="280dip"
+        android:layout_height="55dip"
+        android:layout_alignBottom="@+id/xpos"
+        android:layout_marginLeft="30dip"
+        android:layout_toRightOf="@+id/third_line"
+        android:background="@drawable/blue_button"
+        android:padding="0dip"
+        android:text="Add Ingredient (XY)"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/tempManual"
+        android:layout_width="180dip"
+        android:layout_height="55dip"
+        android:layout_alignLeft="@+id/tempXY"
+        android:layout_alignRight="@+id/tempXYZ"
+        android:layout_below="@+id/tempXYZ"
+        android:layout_marginTop="2dip"
+        android:background="@drawable/blue_button"
+        android:padding="0dip"
+        android:text="Add Ingred. Manually"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+    
+    <ToggleButton
+        android:id="@+id/suction"
+        android:padding="0dip"
+        android:layout_width="55dip"
+        android:layout_height="55dip"
+        android:layout_marginTop="10dip"
+        android:layout_alignLeft="@+id/tempXY"
+        android:layout_below="@+id/second_line"
+        android:background="@drawable/purple_button"
+        android:textColor="#ffffff"
+        android:textOff="Suction off"
+        android:textOn="Suction on"
+        android:textStyle="bold" />
+
+    <ToggleButton
+        android:id="@+id/grip"
+        android:padding="0dip"
+        android:layout_width="55dip"
+        android:layout_height="55dip"
+        android:layout_alignLeft="@+id/suction"
+        android:layout_alignRight="@+id/grip"
+        android:layout_below="@+id/suction"
+        android:layout_toRightOf="@+id/third_line"
+        android:layout_marginTop="2dip"
+        android:background="@drawable/purple_button"
+        android:textColor="#ffffff"
+        android:textOff="Grip off"
+        android:textOn="Grip on"
+        android:textStyle="bold" />
+    
+    <ToggleButton
+        android:id="@+id/suction_timer_toggle"
+        android:layout_width="75dip"
+        android:layout_height="55dip"
+        android:layout_alignBottom="@+id/suction"
+        android:layout_alignRight="@+id/speedGroup"
+        android:layout_alignTop="@+id/suction"
+        android:layout_below="@+id/second_line"
+        android:layout_marginLeft="15dip"
+        android:layout_toRightOf="@+id/suction"
+        android:background="@drawable/purple_button"
+        android:padding="0dip"
+        android:textColor="#ffffff"
+        android:textOff="Suction Timer Off"
+        android:textOn="Suction Timer On"
+        android:textStyle="bold" />
+    
+    <EditText
+        android:id="@+id/suction_timer"
+        android:layout_width="112dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/suction_timer_toggle"
+        android:layout_alignRight="@+id/tempManual"
+        android:layout_alignTop="@+id/suction_timer_toggle"
+        android:layout_marginLeft="2dip"
+        android:layout_toRightOf="@+id/suction_timer_toggle"
+        android:background="@color/white"
+        android:gravity="center"
+        android:hint="seconds"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textSize="25sp" />
+    
+    <ToggleButton
+        android:id="@+id/grip_timer_toggle"
+        android:layout_width="75dip"
+        android:layout_height="55dip"
+        android:layout_alignBottom="@+id/grip"
+        android:layout_alignRight="@+id/suction_timer_toggle"
+        android:layout_alignTop="@+id/grip"
+        android:layout_below="@+id/suction"
+        android:layout_marginLeft="15dip"
+        android:layout_toRightOf="@+id/grip"
+        android:background="@drawable/purple_button"
+        android:padding="0dip"
+        android:textColor="#ffffff"
+        android:textOff="Grip Timer Off"
+        android:textOn="Grip Timer On"
+        android:textStyle="bold" />
+    
+    <EditText
+        android:id="@+id/grip_timer"
+        android:layout_width="112dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/grip_timer_toggle"
+        android:layout_alignRight="@+id/suction_timer"
+        android:layout_alignTop="@+id/grip_timer_toggle"
+        android:layout_marginLeft="2dip"
+        android:layout_toRightOf="@+id/grip_timer_toggle"
+        android:background="@color/white"
+        android:gravity="center"
+        android:hint="seconds"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textSize="25sp" />
+    
+<!--     <Button
+        android:id="@+id/g28"
+        android:padding="0dip"
+        android:layout_width="55dip"
+        android:layout_height="55dip"
+        android:layout_marginTop="2dip"
+        android:layout_alignLeft="@+id/spindle"
+        android:layout_below="@+id/spindle"
+        android:background="@drawable/black_button"
+        android:text="@string/homing_cycle_label"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/home"
+        android:padding="0dip"
+        android:layout_width="55dip"
+        android:layout_height="55dip"
+        android:layout_marginLeft="2dip"
+        android:layout_toRightOf="@+id/g28"
+        android:layout_alignBottom="@+id/g28"
+        android:background="@drawable/black_button"
+        android:text="@string/home"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+        
+        -->
+    
+    <LinearLayout
+        android:id="@+id/whatever_line"
+        android:layout_width="2dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bottom_line"
+        android:layout_alignTop="@+id/home_sequence"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@+id/tempManual"
+        android:background="#000000"
+        android:orientation="vertical" >
+	</LinearLayout>
+    
+    <TextView
+	    android:id="@+id/ingredientsLabel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/tempManual"
+	    android:layout_alignLeft="@+id/tempManual"
+	    android:layout_marginTop="10dip"
+	    android:background="@color/light_green"
+	    android:gravity="bottom"
+	    android:padding="0dip"
+	    android:text="Ingredients:"
+	    android:textSize="25sp"
+	    android:textStyle="bold" />
+    
+    <ToggleButton
+        android:id="@+id/go_to"
+        android:layout_width="110dip"
+        android:layout_height="55dip"
+        android:layout_toRightOf="@+id/ingredientsLabel"
+        android:layout_alignBottom="@+id/ingredientsLabel"
+        android:layout_alignRight="@+id/tempManual"
+        android:layout_alignTop="@+id/ingredientsLabel"
+        android:layout_marginLeft="5dip"
+        android:background="@drawable/green_button"
+        android:padding="0dip"
+        android:textOn="@string/go_label"
+        android:textOff="Go Back"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+    
+    <com.nwags.BetaBot.NoDefaultSpinner
+        android:id="@+id/ingredientsList"
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:layout_alignLeft="@+id/ingredientsLabel"
+        android:layout_alignRight="@+id/go_to"
+        android:layout_alignBottom="@+id/aneg"
+        android:layout_below="@+id/ingredientsLabel"
+        android:background="@color/white"
+        android:tag="ingredientsList" />
+
+<!-- <ToggleButton
+        android:id="@+id/spindle"
+        android:layout_width="55dip"
+        android:layout_height="55dip"
+        android:layout_alignBottom="@+id/adjConst"
+        android:layout_toRightOf="@+id/speedLabel"
+        android:background="@drawable/black_button"
+        android:padding="0dip"
+        android:textColor="#ffffff"
+        android:textOff="@string/spindle_label"
+        android:textOn="@string/spindle_label"
+        android:textStyle="bold" />
+        
+       -->
+
+    <ToggleButton
+        android:id="@+id/toggle_status"
+        android:layout_width="55dip"
+        android:layout_height="55dip"
+        android:layout_below="@+id/grip"
+        android:layout_marginTop="13dp"
+        android:layout_toLeftOf="@+id/grip_timer_toggle"
+        android:background="@drawable/blue_button"
+        android:padding="0dip"
+        android:textColor="#ffffff"
+        android:textOff="Show status"
+        android:textOn="Hide status"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/bottom_line"
+        android:layout_below="@+id/fifth_line"
+    	android:layout_width="fill_parent"
+    	android:layout_height="2dip"
+    	android:layout_marginTop="80dip"
+    	android:background="#000000"
+    	android:orientation="horizontal"
+    	android:layout_alignRight="@+id/whatever_line"
+    	 >
+	</LinearLayout>
+    
+    
+</RelativeLayout>
+
+</HorizontalScrollView>
+</ScrollView>

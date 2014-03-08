@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="#000000">
+ 
+    <TextView
+        android:layout_width="10dip"
+        android:layout_height="fill_parent"
+        android:background="@color/white"/>
+ 	<com.nwags.BetaBot.NoDefaultSpinner
+ 	    android:id="@+id/HeaderSpinner"
+        android:layout_width="95dip"
+        android:layout_height="fill_parent"
+        android:focusable="false"
+        android:entries="@array/header"
+        android:gravity="right"
+        android:spinnerMode="dialog"
+         />
+    <TextView
+        android:id="@+id/lblListHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:textSize="30dip"
+        android:textColor="@color/light_green" />
+ 
+</LinearLayout>

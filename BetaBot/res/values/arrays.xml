@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="axisArray">
+        <item>Axis X</item>
+        <item>Axis Y</item>
+        <item>Axis Z</item>
+        <item>Axis A</item>
+        <item>Axis B</item>
+        <item>Axis C</item>
+    </string-array>
+    <string-array name="axisArrayValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="motorArray">
+        <item>Motor 1</item>
+        <item>Motor 2</item>
+        <item>Motor 3</item>
+        <item>Motor 4</item>
+    </string-array>
+    <string-array name="motorArrayValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="connectionArrayLabels">
+        <item>Bluetooth</item>
+        <item>USB (Host)</item>
+        <!-- <item>USB (Accessory)</item> -->
+    </string-array>
+    <string-array name="connectionArrayValues">
+        <item>0</item>
+        <item>1</item>
+        <!-- <item>2</item> -->
+    </string-array>
+    <string-array name="tabArray">
+        <item>Home</item>
+        <item>MixBook</item>
+        <item>Jog</item>
+        <!-- <item>Template</item> -->
+        <!-- <item>Commands</item>  -->
+        <item>Monitor</item>
+        <item>File</item>
+        <item>Config</item>
+        <item>Settings</item>
+    </string-array>
+    <string-array name="stArray">
+        <item>Normally Open</item>
+        <item>Normally Closed</item>
+    </string-array>
+    <string-array name="hvArray">
+        <item>v6</item>
+        <item>v7</item>
+    </string-array>
+    <string-array name="baudLabels">
+        <item>300</item>
+        <item>600</item>
+        <item>1200</item>
+        <item>2400</item>
+        <item>4800</item>
+        <item>9600</item>
+        <item>14400</item>
+        <item>19200</item>
+        <item>38400</item>
+        <item>57600</item>
+        <item>115200</item>
+        <item>230400</item>
+    </string-array>
+    <string-array name="rows">
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="gogo">
+        <item>Run!</item>
+    </string-array>
+    <string-array name="file" >
+        <item>OPEN</item>
+        <item>NEW</item>
+        <item>SAVE</item>
+    </string-array>
+    <string-array name="templatefile" >
+        <item>OPEN</item>
+        <item>NEW</item>
+        <item>SAVE</item>
+        <item>ATTACH</item>
+    </string-array>
+    <string-array name="recipefile" >
+        <item>SAVE</item>
+        <item>SAVE &#38; RETURN</item>
+    </string-array>
+    <string-array name="actions">
+        <item>GoTo</item>
+        <item>GoTo then Wait</item>
+        <item>Wait then GoTo</item>
+        <item></item>
+    </string-array>
+    <string-array name="header">
+        <item>SET AS SHORTCUT</item>
+        <item>EDIT</item>
+        <!-- <item>DELETE</item> -->
+        <item>VISUALIZE</item>
+        <item>RUN!</item>
+        <item>RUN CONTINUOUSLY</item>
+    </string-array>
+    <string-array name="aspeeds">
+        <item>Full</item>
+        <item>&#190;</item>
+        <item>&#189;</item>
+        <item>&#188;</item>
+        <item>1/10</item>
+    </string-array>
+    <string-array name="sensor">
+        <item>Off</item>
+        <item>All Movement</item>
+        <item>Ingredients</item>
+        <item>Modals</item>
+        <item>Auto Returns</item>
+        <item>Homing</item>
+    </string-array>
+    <string-array name="criterion">
+        <item>Off</item>
+        <item>Greater</item>
+        <item>Less</item>
+    </string-array>
+    <string-array name="pipettor_size">
+        <item>1 ml</item>
+        <item>300 &#x3bc;l</item>
+        <item>250 &#x3bc;l</item>
+        <item>200 &#x3bc;l</item>
+        <item>50 &#x3bc;l</item>
+        <item>direct</item>
+    </string-array>
+</resources>

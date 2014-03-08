@@ -1,0 +1,1077 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/puke">"
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+			<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <Button
+                    android:id="@+id/filePick"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fileLabel" >
+                    
+                </Button>
+
+				<EditText
+				    android:id="@+id/fileEdit"
+				    android:layout_width="150dip"
+				    android:layout_height="wrap_content" >
+
+				</EditText>
+                <Button
+                    android:id="@+id/fileSave"
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dip"
+                    android:text="@string/save" >
+					
+                </Button>
+                <Button
+                    android:id="@+id/templatePick"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/templatePick" >
+                    
+                </Button>
+                <EditText
+                    android:id="@+id/template"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content" >
+                    
+                </EditText>
+                <Button
+                    android:id="@+id/loadTemplate"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/templateLoad" >
+                    
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                
+                 <Spinner
+		            android:id="@+id/run"
+		            android:layout_width="75dip"
+		            android:layout_height="wrap_content"
+		            android:text="@string/go_label" >
+	                   
+	            </Spinner>
+
+	            <TextView
+	                android:layout_width="275dip"
+	                android:layout_height="wrap_content" >
+
+	            </TextView>
+                <Button
+                    android:id="@+id/rowAddButton"
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dip"
+                    android:text="@string/addRow" >
+                    
+                </Button>
+                <Spinner
+                    android:id="@+id/rowSpinner"
+                    android:layout_height="wrap_content"
+                    android:layout_width="150dip" >
+                    
+                </Spinner>
+                <Button
+                    android:id="@+id/rowDeleteButton"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/deleteRow" >
+                    
+                </Button>        
+                
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+	            <TableLayout
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5dip" >
+	
+			        <TableRow 
+			            android:layout_height="match_parent"
+			            android:layout_width="match_parent" >
+	
+			            <TextView
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape" >
+						</TextView>
+	
+			            <TextView
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape" >
+						</TextView>
+	
+			            <TextView
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape" >
+						</TextView>
+	
+			            <TextView
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape" >
+						</TextView>
+	
+			            <TextView
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape" >
+						</TextView>
+	
+			            <TextView
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape" >
+						</TextView>
+	
+			            <TextView
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape" >
+						</TextView>
+	
+			            <TextView
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape" >
+						</TextView>
+	
+			            <TextView
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape" >
+						</TextView>
+	
+			            <TextView
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape" >
+						</TextView>
+	
+			            <TextView
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape" >
+						</TextView>
+					</TableRow>
+				</TableLayout>
+            </LinearLayout>
+            <ScrollView 
+    			android:layout_width="match_parent"
+    			android:layout_height="match_parent"
+    			android:orientation="vertical"
+    			android:layout_marginTop="5dip" >
+                
+			    <TableLayout
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content" >
+			        <TableRow
+			            android:layout_width="match_parent"
+			            android:layout_height="match_parent" >
+	
+			            <TextView
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape" >
+						</TextView>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+			        </TableRow>
+			        <TableRow
+			            android:layout_width="match_parent"
+			            android:layout_height="match_parent" >
+	
+			            <TextView
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape" >
+						</TextView>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+			        </TableRow>
+			        <TableRow
+			            android:layout_width="match_parent"
+			            android:layout_height="match_parent" >
+	
+			            <TextView
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape" >
+						</TextView>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+			        </TableRow>
+			        <TableRow
+			            android:layout_width="match_parent"
+			            android:layout_height="match_parent" >
+	
+			            <TextView
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape" >
+						</TextView>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+			        </TableRow>
+			        <TableRow
+			            android:layout_width="match_parent"
+			            android:layout_height="match_parent" >
+	
+			            <TextView
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape" >
+						</TextView>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+			        </TableRow>
+			        <TableRow
+			            android:layout_width="match_parent"
+			            android:layout_height="match_parent" >
+	
+			            <TextView
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape" >
+						</TextView>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+			        </TableRow>
+			        <TableRow
+			            android:layout_width="match_parent"
+			            android:layout_height="match_parent" >
+	
+			            <TextView
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape" >
+						</TextView>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+			        </TableRow>
+			        <TableRow
+			            android:layout_width="match_parent"
+			            android:layout_height="match_parent" >
+	
+			            <TextView
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape" >
+						</TextView>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+			        </TableRow>
+			        <TableRow
+			            android:layout_width="match_parent"
+			            android:layout_height="match_parent" >
+	
+			            <TextView
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape" >
+						</TextView>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+			        </TableRow>
+			        <TableRow
+			            android:layout_width="match_parent"
+			            android:layout_height="match_parent" >
+	
+			            <TextView
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape" >
+						</TextView>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+			        </TableRow>
+			        <TableRow
+			            android:layout_width="match_parent"
+			            android:layout_height="match_parent" >
+	
+			            <TextView
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape" >
+						</TextView>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+	
+			            <EditText
+			                android:layout_width="50dip"
+			                android:layout_height="match_parent"
+			                android:background="@drawable/cell_shape"
+			                android:inputType="text" >
+						</EditText>
+			        </TableRow>
+			    </TableLayout>
+		    </ScrollView>
+	    </LinearLayout>
+	</HorizontalScrollView>
+</LinearLayout>

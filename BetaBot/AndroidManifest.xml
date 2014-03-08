@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nwags.BetaBot"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-feature android:name="android.hardware.usb.host" android:required="false" />
+    <uses-feature android:name="android.hardware.usb.accessory" android:required="false" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+  	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true"
+        android:debuggable="true" >
+       <meta-data android:name="com.google.android.gms.version"
+           android:value="@integer/google_play_services_version" />
+        <activity
+            android:name="com.nwags.BetaBot.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+           
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.nwags.BetaBot.FileChooser.FileDialog"></activity>
+        
+        <activity 
+            android:name="com.nwags.BetaBot.SettingsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" ></activity>
+        <activity
+            android:name=".FileActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.nwags.BetaBot.USBAccessory.USBAccessoryActivity" />
+        <activity 
+            android:name="com.nwags.BetaBot.DeviceListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />	
+        <activity
+            android:name="com.nwags.BetaBot.RecipesActivity" 
+            android:windowSoftInputMode="stateHidden" 
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.nwags.BetaBot.AddRecipeActivity" 
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+        <activity 
+            android:name="com.nwags.BetaBot.TemplateActivity" 
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity 
+            android:name="com.nwags.BetaBot.Boom"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/CustomActionBarTheme" />
+        <service 
+            android:name="com.nwags.BetaBot.USBAccessory.USBAccessoryService"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.nwags.BetaBot.USBAccessory.USBAccessoryService"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.nwags.BetaBot.USBHost.USBHostService"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+            <meta-data 
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/usb_device_filter" />
+        </service>
+        <service android:name="com.nwags.BetaBot.Bluetooth.BluetoothSerialService">
+            <intent-filter>
+                <action android:name="com.nwags.BetaBot.Bluetooth.BluetoothSerialService" />
+            </intent-filter>
+        </service>
+            
+            
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+    </application>
+	
+    
+</manifest>

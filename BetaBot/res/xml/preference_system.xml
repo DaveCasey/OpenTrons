@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<!--	
+	https://github.com/synthetos/TinyG/wiki/TinyG-Configuration
+		
+		"fb", "float" - no
+		"fv", "float" - no
+		"hv", "int"	
+		"id", "string"	- no
+		"ja", "float" 
+		"ct", "float" 
+		"st", "int"
+		
+		"mt", "int" - added
+		
+		"ej", "boolean" 
+		"jv", "int" 
+		"tv", "int" 
+		"qv", "int" 
+		"sv", "int" 
+		"si", "int"
+		"ic", "boolean" 
+		"ec", "boolean" 
+		"ee", "boolean" 
+		"ex", "int"
+		
+		"gpl", "int"
+		"gun", "boolean"
+		"gco", "int"
+		"gpa", "int"
+		"gdi", "int	
+	 -->
+	
+	<com.nwags.BetaBot.MyEditFloatTextPreference
+		android:title="Hardware Version"
+        android:key="hv"
+        android:summary="%s"
+        android:defaultValue="8.00"
+        android:dialogTitle="Hardware Version"
+        android:dialogMessage="Hardware Version"
+        android:inputType="number" />
+	<com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Junction acceleration"
+        android:key="ja"
+        android:summary="%s"
+        android:defaultValue="100000"
+        android:dialogTitle="Junction acceleration"
+        android:dialogMessage="Global cornering acceleration value"
+        android:inputType="number" />
+	<com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Chordal tolerance"
+        android:key="ct"
+        android:summary="%s"
+        android:defaultValue="0.001"
+        android:dialogTitle="Chordal tolerence"
+        android:dialogMessage="Sets precision of arc drawing. Trades off precision for max arc draw rate"
+        android:inputType="number" />
+	<com.nwags.BetaBot.MyEditTextPreference
+        android:title="Switch type"
+        android:key="st"
+        android:summary="%s"
+        android:defaultValue="1"
+        android:dialogTitle="Switch type"
+        android:dialogMessage="0=NO, 1=NC"
+        android:inputType="number" />
+	<com.nwags.BetaBot.MyEditTextPreference
+        android:title="Motor disable timeout"
+        android:key="mt"
+        android:summary="%s"
+        android:defaultValue="60"
+        android:dialogTitle="Motor disable timeout"
+        android:dialogMessage="Number of seconds before motor power is automatically released."
+        android:inputType="number" />
+	<SwitchPreference
+        android:key="ej"
+        android:title="Enable JSON mode"
+        android:summary="0=text mode, 1=JSON mode"
+        android:defaultValue="false" />
+	<com.nwags.BetaBot.MyEditTextPreference
+        android:title="JSON verbosity"
+        android:key="jv"
+        android:summary="%s"
+        android:defaultValue="5"
+        android:dialogTitle="JSON verbosity"
+        android:dialogMessage="0=silent\n1=footer\n2=messages\n3=configs\n4=linenum\n5=verbose"
+        android:inputType="number" />
+	<com.nwags.BetaBot.MyEditTextPreference
+        android:title="Text mode verbosity"
+        android:key="tv"
+        android:summary="%s"
+        android:defaultValue="1"
+        android:dialogTitle="Text mode verbosity"
+        android:dialogMessage="0=silent\n1=verbose"
+        android:inputType="number" />
+	<com.nwags.BetaBot.MyEditTextPreference
+        android:title="Queue report verbosity"
+        android:key="qv"
+        android:summary="%s"
+        android:defaultValue="2"
+        android:dialogTitle="Queue report verbosity"
+        android:dialogMessage="0=off\n1=filtered\n2=verbose"
+        android:inputType="number" />
+	<com.nwags.BetaBot.MyEditTextPreference
+        android:title="Status report verbosity"
+        android:key="sv"
+        android:summary="%s"
+        android:defaultValue="1"
+        android:dialogTitle="Status report verbosity"
+        android:dialogMessage="0=off\n1=filtered\n2=verbose"
+        android:inputType="number" />
+	<com.nwags.BetaBot.MyEditTextPreference
+        android:title="Status report interval"
+        android:key="si"
+        android:summary="%s"
+        android:defaultValue="250"
+        android:dialogTitle="Status report interval"
+        android:dialogMessage="in milliseconds (50 ms minimum interval)"
+        android:inputType="number" />
+	<com.nwags.BetaBot.MyEditTextPreference
+        android:title="Ignore CR / LF on RX"
+        android:key="ic"
+        android:summary="%s"
+        android:defaultValue="0"
+        android:dialogTitle="Ignore CR / LF on RX"
+        android:dialogMessage="0=accept CR or LF as line terminator\n1=ignore CRs\n2=ignore LFs"
+        android:inputType="number" />
+	<SwitchPreference
+        android:key="ec"
+        android:title="Enable CR on TX"
+        android:summary="0=send LF line termination on TX\n1= send both LF and CR termination"
+        android:defaultValue="false" />
+	<SwitchPreference
+        android:key="ee"
+        android:title="Enable character echo"
+        android:summary="0=off, 1=enabled"
+        android:defaultValue="false" />
+	<com.nwags.BetaBot.MyEditTextPreference
+        android:title="Enable flow control"
+        android:key="ex"
+        android:summary="%s"
+        android:defaultValue="0"
+        android:dialogTitle="Enable flow control"
+        android:dialogMessage="Enable flow control\n0=off\n1=XON/XOFF enabled\n2=RTS/CTS enabled"
+        android:inputType="number" />
+	
+	<com.nwags.BetaBot.MyEditTextPreference
+        android:title="Default plane selection"
+        android:key="gpl"
+        android:summary="%s"
+        android:defaultValue="0"
+        android:dialogTitle="Default plane selection"
+        android:dialogMessage="Default plane selection\n0=XY plane (G17)\n1=XZ plane (G18)\n2=YZ plane (G19)"
+        android:inputType="number" />
+	<SwitchPreference
+        android:key="gun"
+        android:title="Default units mode"
+        android:summary="0=inches mode (G20)\n1=mm mode (G21)"
+        android:defaultValue="true" />
+	<com.nwags.BetaBot.MyEditTextPreference
+        android:title="Default coordinate system"
+        android:key="gco"
+        android:summary="%s"
+        android:defaultValue="1"
+        android:dialogTitle="Default coordinate system"
+        android:dialogMessage="Default coordinate system\n1=G54, 2=G55, 3=G56\n4=G57, 5=G58, 6=G59"
+        android:inputType="number" />
+	<com.nwags.BetaBot.MyEditTextPreference
+        android:title="Default path control mode"
+        android:key="gpa"
+        android:summary="%s"
+        android:defaultValue="2"
+        android:dialogTitle="Default path control mode"
+        android:dialogMessage="Default path control mode\n0=Exact path mode (G61)\n1=Exact stop mode (G61.1)\n2=Continuous mode (G64)"
+        android:inputType="number" />
+	<com.nwags.BetaBot.MyEditTextPreference
+        android:title="Default distance mode"
+        android:key="gdi"
+        android:summary="%s"
+        android:defaultValue="0"
+        android:dialogTitle="Default distance mode"
+        android:dialogMessage="Default distance mode\n0=Absolute mode (G90)\n1=Incremental mode (G91)"
+        android:inputType="number" />
+	<com.nwags.BetaBot.MyEditTextPreference
+        android:title="Axes"
+        android:key="nwa"
+        android:summary="%s"
+        android:defaultValue="XYZA"
+        android:dialogTitle="Axes to be used"
+        android:dialogMessage="List of the axes to be used"
+        android:inputType="text" />
+	<com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Pipette Empty Position"
+        android:key="nwae"
+        android:summary="%s"
+        android:defaultValue="18"
+        android:dialogTitle="Pipettor Empty Position"
+        android:dialogMessage="Pipettor Empty Position"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Drop Tip Position"
+        android:key="nwadt"
+        android:summary="%s"
+        android:defaultValue="22"
+        android:dialogTitle="Pipettor Drop Tip Position"
+        android:dialogMessage="Pipettor Drop Tip Position"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditTextPreference
+        android:title="Configs File"
+        android:key="configfilename"
+        android:summary="%s"
+        android:selectable="false"
+        />
+    <com.nwags.BetaBot.MyEditTextPreference
+        android:title="Show additional logos"
+        android:key="nwsal"
+        android:summary="%s"
+        android:defaultValue="0"
+        android:dialogTitle="Show additional logos"
+        android:dialogMessage="0=no addtn'l logos\n1=box scientific"
+        android:inputType="number" />
+    
+    
+    <!-- HOMING SETTINGS -->
+    <!-- DISTANCES -->
+    
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="X Short Home Distance"
+        android:key="nwxh"
+        android:summary="%s"
+        android:defaultValue="10"
+        android:dialogTitle="X Short Home Distance"
+        android:dialogMessage="X Short Home Distance"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Y Short Home Distance"
+        android:key="nwyh"
+        android:summary="%s"
+        android:defaultValue="10"
+        android:dialogTitle="Y Short Home Distance"
+        android:dialogMessage="Y Short Home Distance"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Z Short Home Distance"
+        android:key="nwzh"
+        android:summary="%s"
+        android:defaultValue="4"
+        android:dialogTitle="Z Short Home Distance"
+        android:dialogMessage="Z Short Home Distance"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="A Short Home Distance"
+        android:key="nwah"
+        android:summary="%s"
+        android:defaultValue="4"
+        android:dialogTitle="A Short Home Distance"
+        android:dialogMessage="A Short Home Distance"
+        android:inputType="numberDecimal|numberSigned" />
+    
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="X Send Home Distance"
+        android:key="nwxsh"
+        android:summary="%s"
+        android:defaultValue="-1500"
+        android:dialogTitle="X Send Home Distance"
+        android:dialogMessage="X Send Home Distance"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Y Send Home Distance"
+        android:key="nwysh"
+        android:summary="%s"
+        android:defaultValue="-240"
+        android:dialogTitle="Y Send Home Distance"
+        android:dialogMessage="Y Send Home Distance"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Z Send Home Distance"
+        android:key="nwzsh"
+        android:summary="%s"
+        android:defaultValue="-200"
+        android:dialogTitle="Z Send Home Distance"
+        android:dialogMessage="Z Send Home Distance"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="A Send Home Distance"
+        android:key="nwash"
+        android:summary="%s"
+        android:defaultValue="-40"
+        android:dialogTitle="A Send Home Distance"
+        android:dialogMessage="A Send Home Distance"
+        android:inputType="numberDecimal|numberSigned" />
+    
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="X Tap In Distance"
+        android:key="nwxta"
+        android:summary="%s"
+        android:defaultValue="-1"
+        android:dialogTitle="X Tap In Distance"
+        android:dialogMessage="X Tap In Distance"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Y Tap In Distance"
+        android:key="nwyta"
+        android:summary="%s"
+        android:defaultValue="-1"
+        android:dialogTitle="Y Tap In Distance"
+        android:dialogMessage="Y Tap In Distance"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Z Tap In Distance"
+        android:key="nwzta"
+        android:summary="%s"
+        android:defaultValue="-0.1"
+        android:dialogTitle="Z Tap In Distance"
+        android:dialogMessage="Z Tap In Distance"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="A Tap In Distance"
+        android:key="nwata"
+        android:summary="%s"
+        android:defaultValue="0.5"
+        android:dialogTitle="A Tap In Distance"
+        android:dialogMessage="A Tap In Distance"
+        android:inputType="numberDecimal|numberSigned" />
+    
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="X Tap Out Distance"
+        android:key="nwxtb"
+        android:summary="%s"
+        android:defaultValue="10"
+        android:dialogTitle="X Tap Out Distance"
+        android:dialogMessage="X Tap Out Distance"
+        android:inputType="number" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Y Tap Out Distance"
+        android:key="nwytb"
+        android:summary="%s"
+        android:defaultValue="10"
+        android:dialogTitle="Y Tap Out Distance"
+        android:dialogMessage="Y Tap Out Distance"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Z Tap Out Distance"
+        android:key="nwztb"
+        android:summary="%s"
+        android:defaultValue="10"
+        android:dialogTitle="Z Tap Out Distance"
+        android:dialogMessage="Z Tap Out Distance"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="A Tap Out Distance"
+        android:key="nwatb"
+        android:summary="%s"
+        android:defaultValue="10"
+        android:dialogTitle="A Tap Out Distance"
+        android:dialogMessage="A Tap Out Distance"
+        android:inputType="numberDecimal|numberSigned" />
+    
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="X Nudge Distance"
+        android:key="nwxn"
+        android:summary="%s"
+        android:defaultValue="10"
+        android:dialogTitle="X Nudge Distance"
+        android:dialogMessage="X Nudge Distance"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Y Nudge Distance"
+        android:key="nwyn"
+        android:summary="%s"
+        android:defaultValue="10"
+        android:dialogTitle="Y Nudge Distance"
+        android:dialogMessage="Y Nudge Distance"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Z Nudge Distance"
+        android:key="nwzn"
+        android:summary="%s"
+        android:defaultValue="10"
+        android:dialogTitle="Z Nudge Distance"
+        android:dialogMessage="Z Nudge Distance"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="A Nudge Distance"
+        android:key="nwan"
+        android:summary="%s"
+        android:defaultValue="5"
+        android:dialogTitle="A Nudge Distance"
+        android:dialogMessage="A Nudge Distance"
+        android:inputType="numberDecimal|numberSigned" />
+    
+    <!-- SPEEDS -->
+    
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="X Short Home Speed Factor"
+        android:key="nwxhf"
+        android:summary="%s"
+        android:defaultValue="50"
+        android:dialogTitle="X Short Home Speed Factor"
+        android:dialogMessage="X Short Home Speed Factor"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Y Short Home Speed Factor"
+        android:key="nwyhf"
+        android:summary="%s"
+        android:defaultValue="50"
+        android:dialogTitle="Y Short Home Speed Factor"
+        android:dialogMessage="Y Short Home Speed Factor"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Z Short Home Speed Factor"
+        android:key="nwzhf"
+        android:summary="%s"
+        android:defaultValue="50"
+        android:dialogTitle="Z Short Home Speed Factor"
+        android:dialogMessage="Z Short Home Speed Factor"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="A Short Home Speed Factor"
+        android:key="nwahf"
+        android:summary="%s"
+        android:defaultValue="3"
+        android:dialogTitle="A Short Home Speed Factor"
+        android:dialogMessage="A Short Home Speed Factor"
+        android:inputType="numberDecimal|numberSigned" />
+    
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="X Send Home Speed Factor"
+        android:key="nwxshf"
+        android:summary="%s"
+        android:defaultValue="10"
+        android:dialogTitle="X Send Home Speed Factor"
+        android:dialogMessage="X Send Home Speed Factor"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Y Send Home Speed Factor"
+        android:key="nwyshf"
+        android:summary="%s"
+        android:defaultValue="10"
+        android:dialogTitle="Y Send Home Speed Factor"
+        android:dialogMessage="Y Send Home Speed Factor"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Z Send Home Speed Factor"
+        android:key="nwzshf"
+        android:summary="%s"
+        android:defaultValue="50"
+        android:dialogTitle="Z Send Home Speed Factor"
+        android:dialogMessage="Z Send Home Speed Factor"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="A Send Home Speed Factor"
+        android:key="nwashf"
+        android:summary="%s"
+        android:defaultValue="3"
+        android:dialogTitle="A Send Home Speed Factor"
+        android:dialogMessage="A Send Home Speed Factor"
+        android:inputType="numberDecimal|numberSigned" />
+    
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="X Tap In Speed Factor"
+        android:key="nwxtaf"
+        android:summary="%s"
+        android:defaultValue="50"
+        android:dialogTitle="X Tap In Speed Factor"
+        android:dialogMessage="X Tap In Speed Factor"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Y Tap In Speed Factor"
+        android:key="nwytaf"
+        android:summary="%s"
+        android:defaultValue="50"
+        android:dialogTitle="Y Tap In Speed Factor"
+        android:dialogMessage="Y Tap In Speed Factor"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Z Tap In Speed Factor"
+        android:key="nwztaf"
+        android:summary="%s"
+        android:defaultValue="50"
+        android:dialogTitle="Z Tap In Speed Factor"
+        android:dialogMessage="Z Tap In Speed Factor"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="A Tap In Speed Factor"
+        android:key="nwataf"
+        android:summary="%s"
+        android:defaultValue="3"
+        android:dialogTitle="A Tap In Speed Factor"
+        android:dialogMessage="A Tap In Speed Factor"
+        android:inputType="numberDecimal|numberSigned" />
+    
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="X Tap Out Speed Factor"
+        android:key="nwxtbf"
+        android:summary="%s"
+        android:defaultValue="50"
+        android:dialogTitle="X Tap Out Speed Factor"
+        android:dialogMessage="X Tap Out Speed Factor"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Y Tap Out Speed Factor"
+        android:key="nwytbf"
+        android:summary="%s"
+        android:defaultValue="50"
+        android:dialogTitle="Y Tap Out Speed Factor"
+        android:dialogMessage="Y Tap Out Speed Factor"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Z Tap Out Speed Factor"
+        android:key="nwztbf"
+        android:summary="%s"
+        android:defaultValue="50"
+        android:dialogTitle="Z Tap Out Speed Factor"
+        android:dialogMessage="Z Tap Out Speed Factor"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="A Tap Out Speed Factor"
+        android:key="nwatbf"
+        android:summary="%s"
+        android:defaultValue="3"
+        android:dialogTitle="A Tap Out Speed Factor"
+        android:dialogMessage="A Tap Out Speed Factor"
+        android:inputType="numberDecimal|numberSigned" />
+    
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="X Nudge Speed Factor"
+        android:key="nwxnf"
+        android:summary="%s"
+        android:defaultValue="50"
+        android:dialogTitle="X Nudge Speed Factor"
+        android:dialogMessage="X Nudge Speed Factor"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Y Nudge Speed Factor"
+        android:key="nwynf"
+        android:summary="%s"
+        android:defaultValue="50"
+        android:dialogTitle="Y Nudge Speed Factor"
+        android:dialogMessage="Y Nudge Speed Factor"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="Z Nudge Speed Factor"
+        android:key="nwznf"
+        android:summary="%s"
+        android:defaultValue="50"
+        android:dialogTitle="Z Nudge Speed Factor"
+        android:dialogMessage="Z Nudge Speed Factor"
+        android:inputType="numberDecimal|numberSigned" />
+    <com.nwags.BetaBot.MyEditFloatTextPreference
+        android:title="A Nudge Speed Factor"
+        android:key="nwanf"
+        android:summary="%s"
+        android:defaultValue="3"
+        android:dialogTitle="A Nudge Speed Factor"
+        android:dialogMessage="A Nudge Speed Factor"
+        android:inputType="numberDecimal|numberSigned" />
+    
+    
+</PreferenceScreen>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.nwags.BetaBot.MyEditText
+        android:id="@+id/row_count"
+        android:tag="row_count"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:gravity="center_horizontal|bottom"
+    	android:background="@drawable/cell_shape"
+    	android:layout_gravity="center"
+    	android:inputType="number"
+    	android:textSize="25sp"
+    />
+
+</LinearLayout>

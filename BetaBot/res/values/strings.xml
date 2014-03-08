@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <string name="hello_world">Hello world!</string>
+    <string name="app_name">OpenTron</string>
+    <string name="action_settings">Settings</string>
+    <string name="location">Location</string>
+    <string name="cant_read_folder">"folder can't be read!"</string>
+    <string name="nnew">New</string>
+    <string name="select">Select</string>
+    <string name="file_name">File name:</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Save</string>
+    <string name="no_data">No Data</string>
+    <string name="err">Error</string>
+    <string name="local_service_label">TinyG Connector</string>
+    <string name="network">Network</string>
+    <string name="usb">USB</string>
+    <string name="unknown_host">Unknown Host</string>
+    <string name="network_error">Network Error</string>
+    <string name="connected">Connected</string>
+    <string name="xpos">X+</string>
+    <string name="xneg">X-</string>
+    <string name="ypos">Y+</string>
+    <string name="yneg">Y-</string>
+    <string name="zpos">Z+</string>
+    <string name="zneg">Z-</string>
+    
+    <string name="apos">A+</string>
+    <string name="aneg">A-</string>
+    
+    <string name="zero_label">Set 0</string>
+    <string name="home">Go Home</string>
+    <string name="reset_label">Reset!</string>
+    <string name="homing_cycle_label">G28.2</string>
+    <string name="spindle_label">Spindle</string>
+    <string name="coolant_label">Coolant</string>
+    <string name="gcode_label">Gcode:</string>
+    <string name="go_label">Go</string>
+    <string name="zeropos">0.000</string>
+    <string name="zeroloc">(0.0, 0.0, 0.0, 0.0)</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="stop">stop</string>
+    <string name="reset">reset</string>
+    <string name="nop">nop</string>
+    <string name="run">run</string>
+    <string name="end">end</string>
+    <string name="hold">hold</string>
+    <string name="homing">homing</string>
+    <string name="aloc">A:</string>
+    <string name="position_entry_label">Position:</string>
+    <string name="status">Status:</string>
+    <string name="momo">Mode:</string>
+    <string name="line">Line:</string>
+    <string name="vel">Vel:</string>
+    <string name="na">-</string>
+    <string name="feed_slow_label">Slow</string>
+    <string name="feed_fast_label">Fast</string>
+    <string name="jogval">Jog:</string>
+    <string name="step_001">.001</string>
+    <string name="step_01">.01</string>
+    <string name="step_1">.1</string>
+    <string name="step_1_0">1</string>
+    <string name="step_10">10</string>
+    <string name="step_100">100</string>
+    <string name="mm">mm</string>
+    <string name="inch">inch</string>
+    <string name="traverse">traverse</string>
+    <string name="straight">straight</string>
+    <string name="cw">cw</string>
+    <string name="ccw">ccw</string>
+    <string name="invalid">invalid</string>
+    <string name="about">"Android app copyright 2013 nwags.
+TinyG and TgFX copyright Synthetos, LLC."</string>
+    <string name="no_usb_host">USB host connectivity only supported in Android 3.1 and above.</string>
+    <string name="no_usb_accessory">USB accessory connectivity only supported in Android 2.3.4 and above.</string>
+    <string name="no_service">TinyG USB Service must be installed for USB support to work.</string>
+    <string name="no_filemanager_installed">No filemanager is installed.</string>
+    <string name="fb">Firmware build:</string>
+    <string name="fv">Firmware version:</string>
+    <string name="si">Update interval:</string>
+    <string name="fr">Feed rate max:</string>
+    <string name="sa">Step angle:</string>
+    <string name="sv">Homing search velocity:</string>
+    <string name="lv">Homing latch velocity:</string>
+    <string name="am">Axis mode:</string>
+    <string name="vm">Velocity max:</string>
+    <string name="tm">Travel max:</string>
+    <string name="jm">Jerk max:</string>
+    <string name="ra">Radius:</string>
+    <string name="jh">Jerk homing:</string>
+    <string name="jd">Junction deviation:</string>
+    <string name="sn">Switch min:</string>
+    <string name="sx">Switch max:</string>
+    <string name="lb">Latch backoff:</string>
+    <string name="zb">Zero backoff:</string>
+    <string name="ma">Map to axis:</string>
+    <string name="tr">Travel/rev:</string>
+    <string name="mi">Microsteps:</string>
+    <string name="po">Polarity:</string>
+    <string name="pm">Power mgmt:</string>
+    <string name="hv">Hardware version:</string>
+    <string name="id">Hardware ID:</string>
+    <string name="st">Switch type:</string>
+    <string name="fileLabel">File</string>
+    <string name="save">Save</string>
+    <string name="start">Start</string>
+    <string name="stop_label">Stop</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="preferences_summary">General preferences</string>
+    <string name="preferences_title">General</string>
+    <string name="preferences_net_summary">Network preferences</string>
+    <string name="preferences_net_title">Network</string>
+    <string name="debug_title">Debug Log</string>
+    <string name="ga_api_key">UA-XXXXXXXX-X</string>
+    
+    
+    <string name="axisX">Axis X</string>
+	<string name="axisY">Axis Y</string>
+	<string name="axisZ">Axis Z</string>
+	<string name="axisA">Axis A</string>
+	<string name="axisB">Axis B</string>
+	<string name="axisC">Axis C</string>
+	<string name="prefs_connection">Connections</string>
+	<string name="prefs_summ_connection">Connections setup</string>
+	<string name="prefs_motor">Motors</string>
+	<string name="prefs_summ_motor">Motor setup</string>
+	<string name="prefs_axis">Axis</string>
+	<string name="prefs_summ_axis">Axis setup</string>
+	<string name="prefs_system">System</string>
+	<string name="prefs_summ_system">System setup</string>
+	<string name="motor1">Motor 1</string>
+	<string name="motor2">Motor 2</string>
+	<string name="motor3">Motor 3</string>
+	<string name="motor4">Motor 4</string>
+	
+	<!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices&#8230;</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+    
+    <string name="alert_dialog_no_bt">Cannot use this application without bluetooth.</string>
+	<string name="alert_dialog_ok">Ok</string>
+    <string name="alert_dialog_turn_on_bt">This application needs the Bluetooth. Do you want turn on?</string>
+    <string name="alert_dialog_warning_title">Warning</string>
+    <string name="alert_dialog_yes">Yes</string>
+	<string name="alert_dialog_no">No</string>
+    
+	<string name="button_write">Write</string>
+	<string name="button_clear">Clear</string>
+	
+	<string name="templatePick">Template</string>
+	<string name="templateLoad">Load</string>
+	<string name="addRow">Add Rows</string>
+	<string name="deleteRow">Del Rows</string>
+	
+	<string name="nameLabel">Name:</string>
+	<string name="No.">No.</string>
+	<string name="X">X:</string>
+	<string name="Y">Y:</string>
+	<string name="Z">Z:</string>
+	<string name="X_C2C">X-C2C:</string>
+	<string name="Y_C2C">Y-C2C:</string>
+	<string name="Number">Number:</string>
+	<string name="rows">ROWS</string>
+	<string name="actionLabel">Action</string>
+	
+	<string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+    
+	<string name="size">size</string>
+    
+</resources>

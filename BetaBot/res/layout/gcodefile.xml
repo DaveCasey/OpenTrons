@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:orientation="vertical" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Button 
+            android:id="@id/filepick" 
+            android:layout_width="75.0dip" 
+            android:layout_height="50.0dip" 
+            android:text="@string/fileLabel" 
+            android:onClick="myClickHandler" />
+        <EditText 
+            android:id="@id/filename" 
+            android:layout_width="400.0dip" 
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:weightSum="100">
+        <ToggleButton android:id="@id/start" 
+            android:layout_height="40.0dip" 
+            android:textOn="@string/stop_label" 
+            android:textOff="@string/start" 
+            android:onClick="myClickHandler"
+            android:layout_width="wrap_content"
+            android:layout_weight="50" />
+        <ToggleButton 
+            android:id="@id/pause" 
+            android:layout_weight="50"
+            android:layout_width="wrap_content" 
+            android:layout_height="40.0dip" 
+            android:textOn="@string/resume" 
+            android:textOff="@string/pause" 
+            android:onClick="myClickHandler" />
+    </LinearLayout>
+    <ScrollView 
+        android:id="@id/fileScroll" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">
+        <TextView 
+            android:id="@id/fileContent" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" />
+    </ScrollView>
+</LinearLayout>
