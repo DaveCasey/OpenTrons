@@ -1,7 +1,8 @@
 OpenTrons
 =========
 
-Android application for automation control using OpenTrons
+Android application for automation control using [OpenTrons](http:www.opentrons.com)
+
 
 
 more to come soon...
