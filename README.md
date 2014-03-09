@@ -27,5 +27,6 @@ SPECIAL PROJECTS:
 * BOOM->SERVICE is for moving the BOOM functionality and some of the guts of MAINACTIVITY into the BETABOTSERVICE so 
   recipes run nicely in the background.
   
+down the road... integrated web server/api
   
   
