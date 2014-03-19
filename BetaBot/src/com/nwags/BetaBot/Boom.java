@@ -2600,8 +2600,8 @@ public class Boom extends Activity implements Runnable{
 			*/
 			if(tempe<22.0f){
 				b = (int)(10f*(tempe+20.0f))+55;
-				g = (int)(12.75f*(tempe+20.0f));
-				r = (int)(6.0714f*(tempe+20.0f));
+				g = (int)(25.5f*(tempe+20.0f));//12.75f
+				r = (int)(12.75f*(tempe+20.0f));//6.0714f
 				if(b>255)
 					b=255;
 				if(g>255)
@@ -2645,8 +2645,9 @@ public class Boom extends Activity implements Runnable{
 		}
 		if(debug)
 			Log.d(TAG,"tempe:"+String.valueOf(tempe)+" r: "+r+" g: "+g+" b:"+b);
+		Log.d(TAG,"sense: "+String.valueOf(sense));
 		
-		if(sense){
+		if(sense) {
 			paint.setARGB(255, r, g, b);
 			cooler = paint.getColor();
 			if(sq1<columns){
@@ -2734,7 +2735,10 @@ public class Boom extends Activity implements Runnable{
 				}
 			}else if(!(sq2==rows-1)){
 			}
-		}else if(trace){
+		} else {
+			Log.d(TAG,"SENSE: "+String.valueOf(sense));
+		}
+		if(trace){ //else if
 			paint.setARGB(255, 0, 0, 0);
 			colors[square] = paint.getColor();
 			

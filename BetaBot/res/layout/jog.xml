@@ -414,7 +414,7 @@
         android:padding="0dip"
         android:layout_width="110dip"
         android:layout_height="55dip"
-        android:layout_alignRight="@+id/ahome"
+        android:layout_alignRight="@+id/tempXY"
         android:layout_below="@+id/fifth_line"
         android:layout_marginTop="10dip"
         android:layout_marginLeft="5dip"

@@ -304,7 +304,10 @@ public class JogFragment extends Fragment {
 		int ingrPos = settings.getInt("ingrPos", 0);
 		boolean gotoToggle = settings.getBoolean("gotoToggle",false);
 		com.nwags.BetaBot.NoDefaultSpinner listview = (com.nwags.BetaBot.NoDefaultSpinner) view.findViewById(R.id.ingredientsList);
-		listview.setSelection(ingrPos);
+		if(ingrPos>template.size())
+			listview.setSelection(0);
+		else
+			listview.setSelection(ingrPos);
 		((ToggleButton) view.findViewById(R.id.go_to)).setChecked(gotoToggle);
 		return view;
 	}

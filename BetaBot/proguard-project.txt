@@ -36,3 +36,8 @@
 -keepnames class * implements android.os.Parcelable {
     public static final ** CREATOR;
 }
+
+-keep public class com.nwags.BetaBot.ConnectionSettingsFragment
+-keep public class com.nwags.BetaBot.AxisSettingsFragment
+-keep public class com.nwags.BetaBot.MotorSettingsFragment
+-keep public class com.nwags.BetaBot.SystemSettingsFragment

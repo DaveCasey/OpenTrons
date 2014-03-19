@@ -89,7 +89,7 @@ public final class R {
         public static final int adjConst=0x7f0800ee;
         public static final int adjFactorToggle=0x7f0800ec;
         public static final int adjReading=0x7f0800ef;
-        public static final int ahome=0x7f0800fd;
+        public static final int ahome=0x7f080106;
         public static final int aneg=0x7f0800e3;
         public static final int apos=0x7f0800f4;
         public static final int arNoTable=0x7f080081;
@@ -327,9 +327,9 @@ public final class R {
         public static final int step_01=0x7f080043;
         public static final int step_1=0x7f080044;
         public static final int step_10=0x7f080046;
-        public static final int step_100=0x7f080108;
+        public static final int step_100=0x7f080109;
         public static final int step_1_0=0x7f080045;
-        public static final int step_400=0x7f080107;
+        public static final int step_400=0x7f080108;
         public static final int step_angle=0x7f080055;
         public static final int suction=0x7f08010c;
         public static final int suction_label=0x7f080092;
@@ -343,8 +343,8 @@ public final class R {
         public static final int system_interval=0x7f08006c;
         public static final int tabview=0x7f08004a;
         public static final int tempManual=0x7f08010b;
-        public static final int tempXY=0x7f08010a;
-        public static final int tempXYZ=0x7f080109;
+        public static final int tempXY=0x7f0800fd;
+        public static final int tempXYZ=0x7f08010a;
         public static final int template=0x7f0800ce;
         public static final int templateFile=0x7f080130;
         public static final int templateFileEdit=0x7f080126;
@@ -375,7 +375,7 @@ public final class R {
         public static final int velocity_max=0x7f08000b;
         public static final int version_text=0x7f0800db;
         public static final int whatever_line=0x7f0800e4;
-        public static final int xhome=0x7f080106;
+        public static final int xhome=0x7f080107;
         public static final int xneg=0x7f080032;
         public static final int xpos=0x7f080035;
         public static final int xzero=0x7f080034;
