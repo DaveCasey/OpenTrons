@@ -368,6 +368,7 @@ public class AddRecipeActivity extends Activity{
 					//nds.setSelection(pos);
 					rh.pip.aspspeed.setSelection(command.AspSpeed);
 					
+					rh.pip.mix.setText(command.MixS);
 					//cb = (CheckBox) tr.findViewWithTag("blowout");
 					//cb.setChecked(command.getBlowout());
 					rh.pip.blowout.setChecked(command.Blowout);
