@@ -5,6 +5,8 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -867,6 +869,7 @@ public class Boom extends Activity implements Runnable{
 			sendCommand("!%\n");
 			sendCommand("{\"sv\":1}\n");
 			sendCommand("{\"jv\":5}\n");
+			sendGcode("(msg)");
 			//sendCommand("$si=50\n");
 			
 			StartSequence launch = new StartSequence();
@@ -1233,6 +1236,12 @@ public class Boom extends Activity implements Runnable{
 					Log.d(TAG,"homingFlag: "+String.valueOf(homingFlag));
 					Log.d(TAG,"Status: "+Status);
 				}
+				
+				
+				
+				
+				
+				
 				if(	(Message.equals("ALL SYSTEMS GO")			||
 						Message.equals("MOVEMENT COMPLETE")		||
 						Message.equals("MODALS COMPLETE")		||
@@ -1251,6 +1260,7 @@ public class Boom extends Activity implements Runnable{
 								Log.d(TAG,"CupidLock unlocked | Go Time");
 						}
 						if(Message.equals("ALL SYSTEMS GO")){
+							
 							if(X==spotX[0]&&Y==spotY[0]&&Z==spotZ[0]&& (Math.abs(pesto-spotA[0])<0.01)){
 								cupidLock = false;
 								CumZ = 0.0f;
@@ -1403,7 +1413,7 @@ public class Boom extends Activity implements Runnable{
 									}
 									
 									exHandler.post(m60);
-								}else{
+								}else{ 		// queuePID size > 0 END
 									if(!gogoLock){
 										gogoLock=true;
 										if(debug){
@@ -2599,9 +2609,9 @@ public class Boom extends Activity implements Runnable{
 			}		
 			*/
 			if(tempe<22.0f){
-				b = (int)(10f*(tempe+20.0f))+55;
-				g = (int)(25.5f*(tempe+20.0f));//12.75f
-				r = (int)(12.75f*(tempe+20.0f));//6.0714f
+				b = (int)(20f*(tempe+20.0f))+55;
+				g = (int)(12.7f*(tempe+20.0f));//12.75f
+				r = (int)(6.5f*(tempe+20.0f));//6.0714f
 				if(b>255)
 					b=255;
 				if(g>255)
@@ -2676,7 +2686,7 @@ public class Boom extends Activity implements Runnable{
 								", lstclr[2]: "+lastcolor[2]);
 							Log.d(TAG,"columns: "+columns+", rows: "+rows);
 						}
-						if(Math.abs(sq1-xpt)<10.0 && Math.abs(sq2-ypt)<10.0){
+						if(Math.abs(sq1-xpt)<20.0 && Math.abs(sq2-ypt)<20.0){
 							
 							while(xpt!=sq1||ypt!=sq2){
 								xdist = sq1 - xpt;
@@ -2850,7 +2860,7 @@ public class Boom extends Activity implements Runnable{
 		}
 			
 		for(int j=0;j<rows;j++){
-			for(int i=0;i<columns;i++){
+			for(int i=0;i<columns;i++) {
 				if((i==bax&&j==bay)||(i==bbx&&j==bby)||(i==bcx&&j==bcy)||(i==bdx&&j==bdy))
 					paint.setARGB(255, 0, 255, 0);
 				else
@@ -2862,7 +2872,7 @@ public class Boom extends Activity implements Runnable{
 		
 		paint.setTextSize(100);
 		paint.setARGB(255, 0, 0, 0);
-		if((tempe>(float)999||tempe<(float)-50)&&!gogoStart&&!gogoEnd&&!errorx&&!errory&&!errorz&&!errora&&!zend){
+		if((tempe>(float)999||tempe<(float)-50)&&!gogoStart&&!gogoEnd&&!errorx&&!errory&&!errorz&&!errora&&!zend) {
 			paint.setTextSize(30);
 			String posStr = String.format("(%.3f,%.3f,%.3f,%.3f)",X,Y,Z,pesto);
 			canvas.drawText(posStr, 40, h-40, paint);
@@ -3079,8 +3089,10 @@ public class Boom extends Activity implements Runnable{
 				
 				PostGcode xyCmd = new PostGcode("g90 g1 f"+String.valueOf(quartXY)+" x0y0");
 				PostGcode aCmd = new PostGcode("g90g1f"+String.valueOf(fullA)+"A0.0");
-				spotX[0] = spotY[0] = spotZ[0] = CumZ = 0.0f;
+				
+				spotX[0] = spotY[0] = spotZ[0] = CumZ = 0.0f; 
 				spotA[0] = CumA = 0.0f;
+				
 				startHandler.postDelayed(zCmd, 300);
 				startHandler.postDelayed(xyCmd, 600);
 				startHandler.postDelayed(aCmd, 900);
@@ -3104,8 +3116,10 @@ public class Boom extends Activity implements Runnable{
 	public void onBackPressed(){
 		if(running){
 			
-		}else
+		}else{
+			sendGcode("M25");
 			super.onBackPressed();
+		}
 	}
 	
 	public class OneAtATime implements Runnable{
@@ -3425,18 +3439,16 @@ public class Boom extends Activity implements Runnable{
 			
 			CumZ+=Float.parseFloat(zGo);
 			CumA=Float.parseFloat(empty);
-			spotX[1] = Float.parseFloat(xGo);
-			spotY[1] = Float.parseFloat(yGo);
-			spotZ[1] = CumZ;
-			spotA[1] = CumA;
+			
 		}else{
 			CumZ+=Float.parseFloat(zGo);
 			CumA+=Float.parseFloat(aGo);
-			spotX[1] = Float.parseFloat(xGo);
-			spotY[1] = Float.parseFloat(yGo);
-			spotZ[1] = CumZ;
-			spotA[1] = CumA;
 		}
+		
+		spotX[1] = Float.parseFloat(xGo);
+		spotY[1] = Float.parseFloat(yGo);
+		spotZ[1] = CumZ;
+		spotA[1] = CumA;
 		
 		ordinance.append("(msgMOVEMENT COMPLETE)\n");
 		queuePID.add(ordinance.toString());
@@ -3444,8 +3456,8 @@ public class Boom extends Activity implements Runnable{
 
 		spotX[2] = spotX[1];
 		spotY[2] = spotY[1];
-		spotZ[2] = spotZ[1];
-		spotA[2] = spotA[1];
+		spotZ[2] = CumZ;
+		//spotA2.offer(CumA);
 		
 		if(sensorq==1||sensorq==3)
 			ordinance.append("sen\n");
@@ -3529,11 +3541,11 @@ public class Boom extends Activity implements Runnable{
 		queuePID.add(ordinance.toString());
 		ordinance.setLength(0);
 		
-		spotX[3] = spotX[2];
-		spotY[3] = spotY[2];
-		spotZ[3] = spotZ[2];
-		spotA[3] = spotA[2];
-		
+		/*spotX3.offer(Float.parseFloat(xGo));
+		spotY3.offer(Float.parseFloat(yGo));
+		spotZ3.offer(CumZ);
+		spotA3.offer(CumA);
+		*/
 		if(sensorq==1||sensorq==4)
 			ordinance.append("sen\n");
 		else
@@ -3547,31 +3559,38 @@ public class Boom extends Activity implements Runnable{
 			ordinance.append("\n");
 			
 			CumZ = 0.0f;
-			spotZ[3] = 0.0f;
+			//spotZ[3] = 0.0f;
 		}
 		if(com.AutoReturnY){
 			idx++;
 			cmdStr = "N" + idx + " g90 g1 f" + String.valueOf(quartXY) + " Y0";
 			ordinance.append(cmdStr);
 			ordinance.append("\n");
-			spotY[3] = 0.0f;
+			spotY[3] = spotY[4] = spotY[0] = 0.0f;
+		}else{
+			spotY[3] = spotY[4] = spotY[0] = Float.parseFloat(yGo);
 		}
 		if(com.AutoReturnX){
 			idx++;
 			cmdStr = "N" + idx + " g90 g1 f" + String.valueOf(quartXY) + " X0"; // speed
 			ordinance.append(cmdStr);
 			ordinance.append("\n");
-			spotX[3] = 0.0f;
+			spotX[3] = spotX[4] = spotX[0] = 0.0f;
+		}else{
+			spotX[3] = spotX[4] = spotX[0] = Float.parseFloat(xGo);
 		}
+		spotZ[3] = spotZ[4] = spotZ[0] = CumZ;
+		spotA[3] = spotA[4] = spotA[0] = CumA;
 		
 		ordinance.append("(msgAUTORETURNS COMPLETE)\n");
 		queuePID.add(ordinance.toString());
 		
+		/*
 		spotX[0] = spotX[4] = spotX[3];
 		spotY[0] = spotY[4] = spotY[3];
 		spotZ[0] = spotZ[4] = spotZ[3];
 		spotA[0] = spotA[4] = spotA[3];
-		
+		*/
 		ordinance.setLength(0);
 		
 		if(sensorq==1||sensorq==4)
@@ -4041,6 +4060,8 @@ public class Boom extends Activity implements Runnable{
 			});
 			AlertDialog ad = aldb.create();
 			ad.show();
+		}else{
+			
 		}
 	}
 	

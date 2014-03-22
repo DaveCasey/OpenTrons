@@ -3,6 +3,7 @@
 	
     <string name="hello_world">Hello world!</string>
     <string name="app_name">OpenTron</string>
+    <string name="app_version_name">Derek</string>
     <string name="action_settings">Settings</string>
     <string name="location">Location</string>
     <string name="cant_read_folder">"folder can't be read!"</string>

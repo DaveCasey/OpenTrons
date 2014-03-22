@@ -190,12 +190,12 @@
         android:dialogMessage="List of the axes to be used"
         android:inputType="text" />
 	<com.nwags.BetaBot.MyEditFloatTextPreference
-        android:title="Pipette Empty Position"
+        android:title="Pipette Blowout Position"
         android:key="nwae"
         android:summary="%s"
         android:defaultValue="18"
-        android:dialogTitle="Pipettor Empty Position"
-        android:dialogMessage="Pipettor Empty Position"
+        android:dialogTitle="Pipettor Blowout Position"
+        android:dialogMessage="Pipettor Blowout Position"
         android:inputType="numberDecimal|numberSigned" />
     <com.nwags.BetaBot.MyEditFloatTextPreference
         android:title="Drop Tip Position"
