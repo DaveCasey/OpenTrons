@@ -22,7 +22,7 @@ SPECIAL PROJECTS ==> DEV ==> EDGE ==> MASTER
 
 SPECIAL PROJECTS:
 * UI/UX is for playing with user interface and user experience everything
-* USB-TOO is for making the recipes run over a USB connection, not just the Bluetooth connection, shouldn't take too 
+* USB-TOO is for making the Recipes run over a USB connection, not just the Bluetooth connection, shouldn't take too 
   long
 * BOOM->SERVICE is for moving the BOOM functionality and some of the guts of MAINACTIVITY into the BETABOTSERVICE so 
   recipes run nicely in the background.
