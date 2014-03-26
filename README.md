@@ -26,6 +26,7 @@ SPECIAL PROJECTS:
   long
 * BOOM->SERVICE is for moving the BOOM functionality and some of the guts of MAINACTIVITY into the BETABOTSERVICE so 
   recipes run nicely in the background.
+* CHESS is to integrate chess notation playing functionality
   
 down the road... integrated web server/api, defining the Mixbook "language" so Mixbooks are nothing more than JSON or xml files, rather than CSV  
   
