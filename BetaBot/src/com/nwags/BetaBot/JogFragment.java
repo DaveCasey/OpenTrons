@@ -138,8 +138,6 @@ public class JogFragment extends Fragment {
 			throw new ClassCastException(activity.toString()
 					+ " must implement JogFragmentListener");
 		}
-		
-		
 	}
 	
 	@Override

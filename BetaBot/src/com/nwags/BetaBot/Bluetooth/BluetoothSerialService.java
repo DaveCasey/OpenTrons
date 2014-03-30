@@ -346,7 +346,6 @@ public class BluetoothSerialService extends BetaBotService{
 	
 	
 	
-	
 	protected class ListenerTask extends AsyncTask<Integer, String, Void> {
 
 		private final BluetoothSocket mmSocket;
