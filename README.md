@@ -12,15 +12,14 @@ BRANCHES
 ========
 
 
-SPECIAL PROJECTS ==> DEV ==> EDGE ==> MASTER
+SPECIAL PROJECTS ==> DEV ==> MASTER
 
 
 * MASTER is the current production code. This is not updated very frequently.
-* EDGE branch is thought to be relatively stable, but has not received enough testing to be promoted to master.
-* DEV is work in process and generally not a good idea to use. Use code from dev only if specifically directed there.
+* DEV is work in process.
 
 
-SPECIAL PROJECTS:
+SPECIAL PROJECTS (FEATURE BRANCHES):
 * UI/UX is for playing with user interface and user experience everything
 * USB-TOO is for making the Recipes run over a USB connection, not just the Bluetooth connection, shouldn't take too 
   long
