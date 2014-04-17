@@ -26,6 +26,6 @@ SPECIAL PROJECTS (FEATURE BRANCHES):
   recipes run nicely in the background (separation of UI and backend).
 * CHESS is to integrate chess notation playing functionality
   
-in the near future... integrated web server/api, make the Mixbook "language" more formal so Mixbooks are nothing more than JSON or xml files, and better handling of CSV  
+in the near future... integrated web server/api, make the Mixbook "language" more formal so Mixbooks are nothing more than JSON or xml files, better handling of CSV, and DOCUMENTATION  
   
   
