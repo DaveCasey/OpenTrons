@@ -20,13 +20,12 @@ SPECIAL PROJECTS ==> DEV ==> MASTER
 
 
 SPECIAL PROJECTS (FEATURE BRANCHES):
-* UI/UX is for playing with user interface and user experience everything
-* USB-TOO is for making the Recipes run over a USB connection, not just the Bluetooth connection, shouldn't take too 
-  long
+* UI/UX is for playing with user interface and user experience everything (better to do after BOOM->SERVICE)
+* USB-TOO is for making the Recipes run over a USB connection, not just the Bluetooth connection
 * BOOM->SERVICE is for moving the BOOM functionality and some of the guts of MAINACTIVITY into the BETABOTSERVICE so 
-  recipes run nicely in the background.
+  recipes run nicely in the background (separation of UI and backend).
 * CHESS is to integrate chess notation playing functionality
   
-down the road... integrated web server/api, defining the Mixbook "language" so Mixbooks are nothing more than JSON or xml files, rather than CSV  
+in the near future... integrated web server/api, make the Mixbook "language" more formal so Mixbooks are nothing more than JSON or xml files, and better handling of CSV  
   
   
