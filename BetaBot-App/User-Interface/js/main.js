@@ -6,7 +6,7 @@ var app = {
 
 	// app global variables
 
-	mouse : true,
+	mouse : false,
 
 	stepAmount : 0.003, // step size during jog button presses (percentage 0-1)
 
