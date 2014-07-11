@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>OpenTrons</title>
+		<meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="./js/backend.js"></script> <!-- for testing -->
+		<script type="text/javascript" src="./js/main.js"></script>
+		<script type="text/javascript" src="./js/bed.js"></script>
+		<script type="text/javascript" src="./js/mixer.js"></script>
+		<script type="text/javascript" src="./js/slider.js"></script>
+		<script type="text/javascript" src="./js/zSlider.js"></script>
+		<script type="text/javascript" src="./js/line.js"></script>
+		<script type="text/javascript" src="./js/jog.js"></script>
+		<script type="text/javascript" src="./js/job.js"></script>
+		<script type="text/javascript" src="./js/home.js"></script>
+		<script type="text/javascript" src="./js/ingredients.js"></script>
+		<script type="text/javascript" src="./js/dummy.js"></script>
+	</head>
+	<body>
+		<div id="container" class="abs fill">
+			<div id="jog_container" class="abs fill slider">
+				<div id="bed_div" class="abs">
+					<div id="bed_canvas" class="abs" style="overflow:hidden">
+					</div>
+					<div id="bed_buttons" class="abs fill" style="display:none">
+						<div id="bed_left" class="abs arrow">
+							<img src="./img/arrow_left.png" class="abs fill" />
+						</div>
+						<div id="bed_right" class="abs arrow">
+							<img src="./img/arrow_right.png" class="abs fill" />
+						</div>
+						<div id="bed_up" class="abs arrow">
+							<img src="./img/arrow_up.png" class="abs fill" />
+						</div>
+						<div id="bed_down" class="abs arrow">
+							<img src="./img/arrow_down.png" class="abs fill" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="ingredients_container" class="abs fill slider">
+				<div id="pipette_container" class="abs">
+					<span id="pipetteLabel" class="abs command">PipetteSize</span>
+					<select id="pipette_sizes" class="abs">
+						<option value="1">1uL</option>
+						<option value="2">2uL</option>
+						<option value="10">10uL</option>
+						<option value="20">20uL</option>
+						<option value="200">200uL</option>
+						<option value="1000">1000uL</option>
+						<option value="5000">5000uL</option>
+					</select>
+				</div>
+				<div id="ingredientScroller" class="abs scroll">
+					<div id="ingredientList">
+					</div>
+					<div id="ingredientAdder" class="command">
+						Add New
+					</div>
+				</div>
+			</div>
+
+			<div id="job_container" class="abs fill slider">
+				<div id="jobScroller" class="abs scroll">
+					<div id="jobList">
+					</div>
+					<div id="jobAdder" class="command">
+						Add New
+					</div>
+				</div>
+			</div>
+
+			<div id="home_container" class="abs fill slider">
+				<div id="openTronsDiv" class="command">
+					OpenTrons
+					<div class="command">
+						BioBot Alpha
+					</div>
+				</div>
+				<div id="searchButton" class="abs command">
+					Scan
+				</div>
+				<div id="linkButton" class="abs command">
+					Link
+				</div>
+				<select id="deviceList" class="abs text">
+				</select>
+				<div id="runButton" class="abs command">
+					Run
+				</div>
+				<div id="killButton" class="abs command">
+					Stop
+				</div>
+				<div id="pauseButton" class="abs command">
+					Pause
+				</div>
+				<div id="resumeButton" class="abs command">
+					Resume
+				</div>
+			</div>
+			<div id="navBar" class="abs navigation">
+				<img id="homeNav" class="abs navUnit" src="./img/home.png"/>
+				<img id="jogNav" class="abs navUnit" src="./img/jog.png"/>
+				<img id="ingredientsNav" class="abs navUnit" src="./img/ingredients.png"/>
+				<img id="jobNav" class="abs navUnit" src="./img/job.png"/>
+			</div>
+		</div>
+		<script type="text/javascript">
+
+			////////////////////////////////////
+			////////////////////////////////////
+			////////////////////////////////////
+
+			window.requestAnimFrame = (function(){
+				return  window.requestAnimationFrame       ||
+				window.webkitRequestAnimationFrame ||
+				window.mozRequestAnimationFrame    ||
+				function( callback ){
+					window.setTimeout(callback, 1000 / 60);
+				};
+			})();
+
+			////////////////////////////////////
+			////////////////////////////////////
+			////////////////////////////////////
+
+			window.onresize = function(){
+				if(this.isSetup) app.resize();
+			}
+
+			////////////////////////////////////
+			////////////////////////////////////
+			////////////////////////////////////
+
+			window.onload = function(){
+				app.setup();
+				app.resize();
+			}
+
+			////////////////////////////////////
+			////////////////////////////////////
+			////////////////////////////////////
+
+		</script>
+	</body>
+</html>
