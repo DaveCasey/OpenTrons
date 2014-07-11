@@ -4,7 +4,7 @@
 
 function Backend(parent){
 
-	this.testGUI = true;
+	this.testGUI = false;
 
 	this.parent = parent;
 
