@@ -30,7 +30,7 @@ It is usable on a phone size device, but the best experience is with a 7” Andr
 THANKS!!!!
 ========
 
-Thanks to the open source projects that made this work possible, especially the Shapoko CNC and the Syntheos TinyG. 
+Thanks to the open source projects that made this work possible, especially the Shapoko CNC and the Synthetos TinyG. 
 
 Thanks to Genspace for being such a great community. 
 
