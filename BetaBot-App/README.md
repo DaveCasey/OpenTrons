@@ -8,6 +8,8 @@ These folders contain all the source code for the BetaBot App, including the req
 
 https://github.com/Opentrons/Android-Plugin was specifically setup for this as trying to do the same with this repo will result in errors...
 
+Next, you must replace the project's www folder contents with the contents from User-Interface www folder.
+
 From here there are a number of options, but the 2 most likely and basic are that you can go ahead and run the app with "cordova run android" if you don't want further changes or "cordova build android", and then you can import the app into Eclipse and make further changes. I went ahead and ran it, and then imported it into Eclipse to make some changes. The changes included fixing the screen orientation to portrait (can be done in AndroidManifest.xml or config.xml in cordova project folder), changing the icons, the app name, app version).
 
 
