@@ -13,3 +13,22 @@ Next, you must replace the project's www folder contents with the contents from 
 From here there are a number of options, but the two most practical and basic are that you can go ahead and run the app with "cordova run android" if you don't want further changes or use "cordova build android", and then you can import the app into Eclipse and make further changes. I went ahead and ran it, and then imported it into Eclipse to make some changes. The changes included fixing the screen orientation to portrait (can be done in AndroidManifest.xml or config.xml in cordova project folder), changing the icons, the app name, app version).
 
 
+
+
+
+LICENSE
+--------
+Copyright 2014 Nicholas Wagner
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
