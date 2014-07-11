@@ -6,7 +6,7 @@ OpenTrons are affordable, easy to use biotech tools that can be connected togeth
 
 Here you will find the *BETA* release of the BetaBot App. It lets you connect to a BioBot, set up an automation job, and run it with an Android device. 
 
-A BOM and assembly guide for our open-source, DIY liquid handling robot, the BioBot can be found here: https://www.synbiota.com/users/1065 
+A BOM and assembly guide for our open-source, DIY liquid handling robot, the BioBot can be found here: https://www.synbiota.com/projects/535/workspace_pages
 
 For more information, email info@opentrons.com. 
 
