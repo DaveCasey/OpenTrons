@@ -1,0 +1,106 @@
+html, body{
+	background-color: black;
+}
+
+@font-face {
+    font-family: "clearSans";
+    src: url(../fonts/clear-sans/ClearSans-Medium.ttf);
+}
+
+#container{
+	overflow:hidden;
+}
+
+.abs {
+	display:block;
+	position:absolute;
+}
+
+.fill {
+	width:100%;
+	height:100%;
+	left:0px;
+	top:0px;
+}
+
+.ball{
+	border-radius: 50%;
+	background-color: 'yellow';
+}
+
+.arrow{
+	width:20px;
+	height:20px;
+}
+
+.command{
+	display:block;
+	text-align: center;
+	font-family: "clearSans", Helvetica;
+	color:white;
+}
+
+.text{
+	font-family: "clearSans", Helvetica;
+}
+
+.navigation{
+	left:0px;
+	top:0px;
+}
+
+.navUnit{
+	width:10%;
+}
+
+.ingredient{
+	/*display:block;*/
+	margin-bottom: 5%;
+	overflow:hidden;
+	opacity : 0;
+}
+
+.slider{
+	-webkit-transition : left 0.2s ease-in;
+	-moz-transition : left 0.2s ease-in;
+	-o-transition : left 0.2s ease-in;
+	transition : left 0.2s ease-in;
+}
+
+.fadeColor{
+	-webkit-transition : border-color 1s ease-in;
+	-moz-transition : border-color 1s ease-in;
+	-o-transition : border-color 1s ease-in;
+	transition : border-color 1s ease-in;
+}
+
+.opacityFade{
+	-webkit-transition : opacity 0.5s ease-in;
+	-moz-transition : opacity 0.5s ease-in;
+	-o-transition : opacity 0.5s ease-in;
+	transition : opacity 0.5s ease-in;
+}
+
+.invert {
+	-webkit-filter: invert(100%);
+}
+
+.scroll{
+	overflow:scroll;
+}
+
+select{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0px;
+    border-style: none;
+}
+
+input{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0px;
+    border-style: none;
+}

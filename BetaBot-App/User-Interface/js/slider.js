@@ -1,0 +1,72 @@
+////////////////////////////////////
+////////////////////////////////////
+////////////////////////////////////
+
+function Slider(parent,axis){
+	this.parent = parent;
+
+	this.div = undefined;
+
+	this.axis = axis; // either z, a, b, or c
+
+	this.line;
+
+	this.gridSize;
+}
+
+////////////////////////////////////
+////////////////////////////////////
+////////////////////////////////////
+
+Slider.prototype.update = function(){
+	this.line.update();
+}
+
+////////////////////////////////////
+////////////////////////////////////
+////////////////////////////////////
+
+Slider.prototype.setup = function(){
+	this.div = document.createElement('div');
+	this.div.className = 'abs';
+
+	this.div.style.backgroundColor = 'blue';
+
+	this.parent.div.appendChild(this.div);
+
+	this.line = new Line(this);
+	this.line.setup();
+}
+
+////////////////////////////////////
+////////////////////////////////////
+////////////////////////////////////
+
+Slider.prototype.resize = function(){
+
+	this.gridSize = this.parent.gridSize;
+
+	this.line.resize();
+}
+
+////////////////////////////////////
+////////////////////////////////////
+////////////////////////////////////
+
+Slider.prototype.step = function(direction){
+	var targetMsg = {};
+	if(this.axis==='z') direction *= -1;
+	targetMsg[this.axis] = app.backend.pos[this.axis]+(direction*0.1);
+
+	try{
+		app.backend.jog(targetMsg);
+	}
+	catch(error){
+		console.log('ERROR sending to openTrons');
+		console.log(error);
+	}
+}
+
+////////////////////////////////////
+////////////////////////////////////
+////////////////////////////////////
