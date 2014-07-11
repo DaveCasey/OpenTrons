@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin
+    xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.opentrons.otbtalpha.cordova.otbtalpha"
+    version="0.3.0">
+
+    <name>Opentrons Bluetooth Alpha Plugin</name>
+    <description>Opentrons Bluetooth Alpha Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>opentrons</keywords>
+    <repo>https://github.com/Opentrons/OpenTrons.git</repo>
+    <issue>https://github.com/Opentrons/OpenTrons/issues</issue>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <!-- Load in the core background service -->
+	
+
+    <js-module src="www/opentrons.js" name="opentrons">
+        <clobbers target="window.opentrons" />
+    </js-module>
+
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/widget">
+            <feature name="OTBTAlpha">
+                <param name="android-package" value="com.opentrons.otbtalpha.cordova.OTBTAlpha"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/com/opentrons/otbtalpha/cordova/OTBTAlpha.java"
+            target-dir="src/com/opentrons/otbtalpha/cordova"/>
+        <source-file src="src/android/com/opentrons/otbtalpha/cordova/OTBTBlueServiceAlpha.java"
+            target-dir="src/com/opentrons/otbtalpha/cordova"/>
+        <source-file src="src/android/com/opentrons/otbtalpha/cordova/OTBTServiceAlpha.java"
+            target-dir="src/com/opentrons/otbtalpha/cordova"/>
+        <source-file src="src/android/com/opentrons/otbtalpha/cordova/OTBTLogicAlpha.java"
+            target-dir="src/com/opentrons/otbtalpha/cordova"/>
+        <source-file src="src/android/com/opentrons/otbtalpha/cordova/IUpdateListener.java"
+            target-dir="src/com/opentrons/otbtalpha/cordova"/>
+        <source-file src="src/android/com/opentrons/otbtalpha/cordova/OTBTApiAlpha.aidl"
+            target-dir="src/com/opentrons/otbtalpha/cordova"/>
+        <source-file src="src/android/com/opentrons/otbtalpha/cordova/OTBTListenerAlpha.aidl"
+            target-dir="src/com/opentrons/otbtalpha/cordova"/>
+            
+        
+
+        <!-- kludge for 2.9 -->
+        <source-file src="src/android/org/apache/cordova/api/Dummy.java"
+            target-dir="src/org/apache/cordova/api"/>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <service android:name="com.opentrons.otbtalpha.cordova.OTBTBlueServiceAlpha">
+                <intent-filter android:name="com.opentrons.otbtalpha.cordovaOTBTBlueServiceAlpha" />
+            </service>
+            <service android:name="com.opentrons.otbtalpha.cordova.OTBTServiceAlpha">
+                <intent-filter android:name="com.opentrons.otbtalpha.cordovaOTBTServiceAlpha" />
+            </service>
+        </config-file>
+        
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.BLUETOOTH" />
+            <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        </config-file>
+
+    </platform>
+    
+</plugin>
