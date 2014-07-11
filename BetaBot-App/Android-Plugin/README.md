@@ -1,9 +1,12 @@
 PLUGIN
 ========
-This folder contains the source code for the Android plugin for building the app with Cordova. If you wish to use the plugin, please pull it from https://github.com/Opentrons/Android-Plugin.git. It was created for that purpose because this is a general repo for the overall project and will result in errors if you try to use it. Thank you to Mark Taylor (https://github.com/Red-Folder) and Don Coleman (https://github.com/don) as this plugin is derived from an amalgamation of their respective projects https://github.com/Red-Folder/bgs-core and https://github.com/don/BluetoothSerial.
+This folder contains the source code for the Android plugin for building the app with Cordova. If you wish to use the plugin, please pull it from https://github.com/Opentrons/Android-Plugin.git. It was created for that purpose because this is a general repo for the overall project and will result in errors if you try to use it.
 
 
 
+THANK YOU!
+----------
+Thank you to Mark Taylor (https://github.com/Red-Folder) and Don Coleman (https://github.com/don) as this plugin is derived from an amalgamation of their respective projects https://github.com/Red-Folder/bgs-core and https://github.com/don/BluetoothSerial.
 
 
 
