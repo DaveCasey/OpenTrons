@@ -62,7 +62,7 @@ and 1 <-> X, 2 <-> Y, 3 <-> Z, and 4 <-> A
 
 So, for example, if you need to switch the polarity of the Y motors, you would feed either
 
-$1po=0 or $1po=1
+$2po=0 or $2po=1
 
 into TinyG with CoolTerm. There are only 2 options for a given motor's polarity, so you have a 50-50 shot.
 
