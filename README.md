@@ -13,6 +13,8 @@ For more information, email info@opentrons.com.
 ========
 Getting Started
 ========
+To configure the TinyG board, please visit the TinyG Configuration page: https://github.com/Opentrons/OpenTrons/tree/master/Configuration
+
 Check out our Getting Started Guide on Synbiota:  https://www.synbiota.com/projects/535/workspace_pages/13173
 
 ========
