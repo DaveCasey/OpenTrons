@@ -12,7 +12,9 @@ customization.
 ========
 The first thing you need to do is connect TinyG to your computer over USB in order to load the configuration settings. 
 
-Synthetos provides a handy guide to do that, found here https://github.com/synthetos/TinyG/wiki/Connecting-TinyG#establish-usb-connection. 
+Synthetos provides a handy guide for that, found here
+
+https://github.com/synthetos/TinyG/wiki/Connecting-TinyG#establish-usb-connection. 
 
 Although there are many ways to interface with the TinyG, CoolTerm is the easiest, and Synthetos uses it in their guide. 
 
@@ -50,9 +52,9 @@ YOUR DONE!... almost
 ========
 Troubleshooting
 ========
-You're only almost done because depending on how you connected the motors you may need to change the polarity.
+You're only almost done because depending on how the motors are connected, you may need to change their polarity.
 
-The logic for the motor/axis polarity goes like this:
+The logic for the motor polarity goes like this:
 
 $[n]po=[0 or 1], where n is 1,2,3, or 4
 
@@ -62,7 +64,9 @@ So, for example, if you need to switch the polarity of the Y motors, you would f
 
 $1po=0 or $1po=1
 
-into TinyG with CoolTerm. There are only 2 options for a given motors polarity, so you have a 50-50 shot.
+into TinyG with CoolTerm. There are only 2 options for a given motor's polarity, so you have a 50-50 shot.
+
+If it doesn't work, switch the value and try again.
 
 
 ========
@@ -72,6 +76,10 @@ There are many other configuration settings you can play with, as you can probab
 
 Most of these you probably want to ignore, but you may be interested in changing the accelearation and/or
 
-speed. For that, and other configuration settings, please see Synthetos' TinyG configuration guide here https://github.com/synthetos/TinyG/wiki/TinyG-Configuration#xvm---velocity-maximum
+speed. For that, and other configuration settings, please see Synthetos' TinyG configuration guide here
 
-and here https://github.com/synthetos/TinyG/wiki/TinyG-Configuration#xjm---jerk-maximum
+https://github.com/synthetos/TinyG/wiki/TinyG-Configuration#xvm---velocity-maximum
+
+and here 
+
+https://github.com/synthetos/TinyG/wiki/TinyG-Configuration#xjm---jerk-maximum
