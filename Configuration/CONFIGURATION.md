@@ -14,9 +14,9 @@ The first thing you need to do is connect TinyG to your computer over USB in ord
 
 Synthetos provides a handy guide to do that, found here https://github.com/synthetos/TinyG/wiki/Connecting-TinyG#establish-usb-connection. 
 
-Although there are many ways to interface with the TinyG, CoolTerm is the easiest, and its used in Synthetos' guide. The 
+Although there are many ways to interface with the TinyG, CoolTerm is the easiest, and Synthetos uses it in their guide. 
 
-rest of this guide picks up from there assuming you have connected to TinyG with CoolTerm.
+The rest of this guide picks up from there assuming you have connected to TinyG with CoolTerm.
 
 ========
 2nd Step: Configure CoolTerm for sending configuration file
