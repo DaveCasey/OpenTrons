@@ -69,6 +69,9 @@ into TinyG with CoolTerm. There are only 2 options for a given motor's polarity,
 If it doesn't work, switch the value and try again.
 
 
+Also, keep in mind that these configurations set the baud rate to 115200.
+
+
 ========
 Customization
 ========
