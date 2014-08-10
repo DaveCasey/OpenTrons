@@ -41,7 +41,7 @@ Optionally, I increased the receive buffer size to 50000 so I could see the enti
 ========
 3rd Step: Send configuration file
 ========
-Download base_config.txt
+Download [base_config.txt](https://github.com/Opentrons/OpenTrons/blob/master/Configuration/base_config.txt)
 
 With CoolTerm, select Connction -> Send Textfile...
 
